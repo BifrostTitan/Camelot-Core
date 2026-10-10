@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings><Optimize>true</Optimize>
+
+  </PropertyGroup>
+  <Target Name="RequireServerLib" BeforeTargets="ResolveReferences">
+    <Error Condition="'$(ServerLib)' == ''" Text="Pass -p:ServerLib=/absolute/path/to/built/DOLSharp/assemblies" />
+  </Target>
+  <ItemGroup>
+    <Reference Include="GameServer"><HintPath>$(ServerLib)/GameServer.dll</HintPath></Reference>
+    <Reference Include="DOLBase"><HintPath>$(ServerLib)/DOLBase.dll</HintPath></Reference>
+    <Reference Include="DOLDatabase"><HintPath>$(ServerLib)/DOLDatabase.dll</HintPath></Reference>
+    <Reference Include="DOLServer"><HintPath>$(ServerLib)/DOLServer.dll</HintPath></Reference>
+    <None Include="$(ServerLib)/*.dll" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

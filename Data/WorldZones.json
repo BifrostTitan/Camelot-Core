@@ -1,0 +1,4202 @@
+[
+  {
+    "id": 0,
+    "name": "Camelot Hills",
+    "type": 0,
+    "region": 1,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 548864,
+    "originY": 483328
+  },
+  {
+    "id": 1,
+    "name": "Salisbury Plains",
+    "type": 0,
+    "region": 1,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 548864,
+    "originY": 548864
+  },
+  {
+    "id": 2,
+    "name": "Black Mtns. South",
+    "type": 0,
+    "region": 1,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 483328,
+    "originY": 434176
+  },
+  {
+    "id": 3,
+    "name": "Black Mtns. North",
+    "type": 0,
+    "region": 1,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 483328,
+    "originY": 368640
+  },
+  {
+    "id": 4,
+    "name": "Dartmoor",
+    "type": 0,
+    "region": 1,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 352256,
+    "originY": 696320
+  },
+  {
+    "id": 6,
+    "name": "Cornwall",
+    "type": 0,
+    "region": 1,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 352256,
+    "originY": 630784
+  },
+  {
+    "id": 7,
+    "name": "Llyn Barfog",
+    "type": 0,
+    "region": 1,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 417792,
+    "originY": 368640
+  },
+  {
+    "id": 8,
+    "name": "Campacorentin Forest",
+    "type": 0,
+    "region": 1,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 483328,
+    "originY": 581632
+  },
+  {
+    "id": 9,
+    "name": "Avalon Marsh",
+    "type": 0,
+    "region": 1,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 417792,
+    "originY": 614400
+  },
+  {
+    "id": 10,
+    "name": "Lyonesse",
+    "type": 0,
+    "region": 1,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 286720,
+    "originY": 630784
+  },
+  {
+    "id": 11,
+    "name": "Forest Sauvage",
+    "type": 0,
+    "region": 1,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 565248,
+    "originY": 417792
+  },
+  {
+    "id": 12,
+    "name": "Snowdonia",
+    "type": 0,
+    "region": 1,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 499712,
+    "originY": 303104
+  },
+  {
+    "id": 14,
+    "name": "Pennine Mountains",
+    "type": 0,
+    "region": 1,
+    "proxy": -1,
+    "enabled": false,
+    "originX": 565248,
+    "originY": 352256
+  },
+  {
+    "id": 15,
+    "name": "Hadrian's Wall",
+    "type": 0,
+    "region": 1,
+    "proxy": -1,
+    "enabled": false,
+    "originX": 598016,
+    "originY": 286720
+  },
+  {
+    "id": 19,
+    "name": "Stonehenge Barrows",
+    "type": 2,
+    "region": 20,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 21,
+    "name": "Tomb of Mithra",
+    "type": 2,
+    "region": 21,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 22,
+    "name": "Keltoi Fogou",
+    "type": 2,
+    "region": 22,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 23,
+    "name": "Catacombs of Cardova",
+    "type": 2,
+    "region": 23,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 24,
+    "name": "Tepok's Mine",
+    "type": 2,
+    "region": 24,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 26,
+    "name": "City of Camelot",
+    "type": 1,
+    "region": 10,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 13,
+    "name": "Caerwent",
+    "type": 3,
+    "region": 2,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 17,
+    "name": "Rilan",
+    "type": 3,
+    "region": 2,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 458752
+  },
+  {
+    "id": 18,
+    "name": "Dalton",
+    "type": 3,
+    "region": 2,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 458752,
+    "originY": 524288
+  },
+  {
+    "id": 16,
+    "name": "Old Sarum",
+    "type": 3,
+    "region": 2,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 589824
+  },
+  {
+    "id": 20,
+    "name": "Brisworthy",
+    "type": 3,
+    "region": 2,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 458752,
+    "originY": 458752
+  },
+  {
+    "id": 64,
+    "name": "Aylesbury",
+    "type": 3,
+    "region": 2,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 458752,
+    "originY": 589824
+  },
+  {
+    "id": 260,
+    "name": "Chiltern",
+    "type": 3,
+    "region": 2,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 393216,
+    "originY": 524288
+  },
+  {
+    "id": 50,
+    "name": "Avalon City",
+    "type": 1,
+    "region": 50,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 51,
+    "name": "Isle of Glass",
+    "type": 0,
+    "region": 51,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 491520,
+    "originY": 491520
+  },
+  {
+    "id": 52,
+    "name": "Avalon Isle",
+    "type": 0,
+    "region": 51,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 425984,
+    "originY": 442368
+  },
+  {
+    "id": 53,
+    "name": "Dales of Devwy",
+    "type": 0,
+    "region": 51,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 376832,
+    "originY": 376832
+  },
+  {
+    "id": 54,
+    "name": "Caldey",
+    "type": 0,
+    "region": 51,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 311296,
+    "originY": 360448
+  },
+  {
+    "id": 55,
+    "name": "Gwyddneau",
+    "type": 0,
+    "region": 51,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 294912,
+    "originY": 425984
+  },
+  {
+    "id": 56,
+    "name": "Aldland",
+    "type": 0,
+    "region": 51,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 360448,
+    "originY": 475136
+  },
+  {
+    "id": 57,
+    "name": "Inishail Island",
+    "type": 0,
+    "region": 51,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 229376,
+    "originY": 425984
+  },
+  {
+    "id": 60,
+    "name": "Caer Sidi",
+    "type": 2,
+    "region": 60,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 61,
+    "name": "Krondon",
+    "type": 2,
+    "region": 61,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 62,
+    "name": "Crystal Cave",
+    "type": 2,
+    "region": 62,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 70,
+    "name": "Ruins of Atlantis",
+    "type": 0,
+    "region": 70,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 71,
+    "name": "Ruinerar av Atlantis",
+    "type": 0,
+    "region": 71,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 72,
+    "name": "Scrios de Atlantis",
+    "type": 0,
+    "region": 72,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 73,
+    "name": "Oceanus Hesperos",
+    "type": 0,
+    "region": 73,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 262144,
+    "originY": 524288
+  },
+  {
+    "id": 74,
+    "name": "Mesothalassa",
+    "type": 0,
+    "region": 73,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 327680,
+    "originY": 524288
+  },
+  {
+    "id": 75,
+    "name": "Oceanus Boreal",
+    "type": 0,
+    "region": 73,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 327680,
+    "originY": 458752
+  },
+  {
+    "id": 76,
+    "name": "Oceanus Notos",
+    "type": 0,
+    "region": 73,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 327680,
+    "originY": 589824
+  },
+  {
+    "id": 77,
+    "name": "Oceanus Anatole",
+    "type": 0,
+    "region": 73,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 393216,
+    "originY": 524288
+  },
+  {
+    "id": 78,
+    "name": "Cetus' Pit",
+    "type": 2,
+    "region": 78,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 79,
+    "name": "Sobekite Eternal",
+    "type": 2,
+    "region": 79,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 80,
+    "name": "Temple of Twilight",
+    "type": 2,
+    "region": 80,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 81,
+    "name": "Stygian Delta",
+    "type": 0,
+    "region": 73,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 294912,
+    "originY": 393216
+  },
+  {
+    "id": 82,
+    "name": "Land of Atum",
+    "type": 0,
+    "region": 73,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 229376,
+    "originY": 393216
+  },
+  {
+    "id": 83,
+    "name": "Halls of Ma'ati",
+    "type": 2,
+    "region": 83,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 84,
+    "name": "Typhon's Reach",
+    "type": 0,
+    "region": 73,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 458752,
+    "originY": 524288
+  },
+  {
+    "id": 85,
+    "name": "Ashen Isles",
+    "type": 0,
+    "region": 73,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 86,
+    "name": "Green Glades",
+    "type": 0,
+    "region": 73,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 360448,
+    "originY": 655360
+  },
+  {
+    "id": 87,
+    "name": "Arbor Glen",
+    "type": 0,
+    "region": 73,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 425984,
+    "originY": 655360
+  },
+  {
+    "id": 88,
+    "name": "the Great Pyramid of Stygia",
+    "type": 2,
+    "region": 88,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 89,
+    "name": "Deep Volcanus",
+    "type": 2,
+    "region": 89,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 90,
+    "name": "City of Aerus",
+    "type": 4,
+    "region": 90,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 91,
+    "name": "Celestius",
+    "type": 2,
+    "region": 91,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 123,
+    "name": "Aphophian",
+    "type": 2,
+    "region": 123,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 124,
+    "name": "Hephaestian",
+    "type": 2,
+    "region": 124,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 198,
+    "name": "Shaitan",
+    "type": 2,
+    "region": 198,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 199,
+    "name": "Volurgon",
+    "type": 2,
+    "region": 199,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 30,
+    "name": "Oceanus Hesperos",
+    "type": 0,
+    "region": 30,
+    "proxy": 73,
+    "enabled": true,
+    "originX": 262144,
+    "originY": 524288
+  },
+  {
+    "id": 31,
+    "name": "Mesothalassa",
+    "type": 0,
+    "region": 30,
+    "proxy": 74,
+    "enabled": true,
+    "originX": 327680,
+    "originY": 524288
+  },
+  {
+    "id": 32,
+    "name": "Oceanus Boreal",
+    "type": 0,
+    "region": 30,
+    "proxy": 75,
+    "enabled": true,
+    "originX": 327680,
+    "originY": 458752
+  },
+  {
+    "id": 33,
+    "name": "Oceanus Notos",
+    "type": 0,
+    "region": 30,
+    "proxy": 76,
+    "enabled": true,
+    "originX": 327680,
+    "originY": 589824
+  },
+  {
+    "id": 34,
+    "name": "Oceanus Anatole",
+    "type": 0,
+    "region": 30,
+    "proxy": 77,
+    "enabled": true,
+    "originX": 393216,
+    "originY": 524288
+  },
+  {
+    "id": 35,
+    "name": "Cetus' Pit",
+    "type": 2,
+    "region": 35,
+    "proxy": 78,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 36,
+    "name": "Sobekite Eternal",
+    "type": 2,
+    "region": 36,
+    "proxy": 79,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 37,
+    "name": "Temple of Twilight",
+    "type": 2,
+    "region": 37,
+    "proxy": 80,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 38,
+    "name": "Stygian Delta",
+    "type": 0,
+    "region": 30,
+    "proxy": 81,
+    "enabled": true,
+    "originX": 294912,
+    "originY": 393216
+  },
+  {
+    "id": 39,
+    "name": "Land of Atum",
+    "type": 0,
+    "region": 30,
+    "proxy": 82,
+    "enabled": true,
+    "originX": 229376,
+    "originY": 393216
+  },
+  {
+    "id": 40,
+    "name": "Halls of Ma'ati",
+    "type": 2,
+    "region": 40,
+    "proxy": 83,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 41,
+    "name": "Typhon's Reach",
+    "type": 0,
+    "region": 30,
+    "proxy": 84,
+    "enabled": true,
+    "originX": 458752,
+    "originY": 524288
+  },
+  {
+    "id": 42,
+    "name": "Ashen Isles",
+    "type": 0,
+    "region": 30,
+    "proxy": 85,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 43,
+    "name": "Green Glades",
+    "type": 0,
+    "region": 30,
+    "proxy": 86,
+    "enabled": true,
+    "originX": 360448,
+    "originY": 655360
+  },
+  {
+    "id": 44,
+    "name": "Arbor Glen",
+    "type": 0,
+    "region": 30,
+    "proxy": 87,
+    "enabled": true,
+    "originX": 425984,
+    "originY": 655360
+  },
+  {
+    "id": 45,
+    "name": "the Great Pyramid of Stygia",
+    "type": 2,
+    "region": 45,
+    "proxy": 88,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 46,
+    "name": "Deep Volcanus",
+    "type": 2,
+    "region": 46,
+    "proxy": 89,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 47,
+    "name": "City of Aerus",
+    "type": 4,
+    "region": 47,
+    "proxy": 90,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 130,
+    "name": "Oceanus Hesperos",
+    "type": 0,
+    "region": 130,
+    "proxy": 73,
+    "enabled": true,
+    "originX": 262144,
+    "originY": 524288
+  },
+  {
+    "id": 131,
+    "name": "Mesothalassa",
+    "type": 0,
+    "region": 130,
+    "proxy": 74,
+    "enabled": true,
+    "originX": 327680,
+    "originY": 524288
+  },
+  {
+    "id": 132,
+    "name": "Oceanus Boreal",
+    "type": 0,
+    "region": 130,
+    "proxy": 75,
+    "enabled": true,
+    "originX": 327680,
+    "originY": 458752
+  },
+  {
+    "id": 133,
+    "name": "Oceanus Notos",
+    "type": 0,
+    "region": 130,
+    "proxy": 76,
+    "enabled": true,
+    "originX": 327680,
+    "originY": 589824
+  },
+  {
+    "id": 134,
+    "name": "Oceanus Anatole",
+    "type": 0,
+    "region": 130,
+    "proxy": 77,
+    "enabled": true,
+    "originX": 393216,
+    "originY": 524288
+  },
+  {
+    "id": 135,
+    "name": "Cetus' Pit",
+    "type": 2,
+    "region": 135,
+    "proxy": 78,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 136,
+    "name": "Sobekite Eternal",
+    "type": 2,
+    "region": 136,
+    "proxy": 79,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 137,
+    "name": "Temple of Twilight",
+    "type": 2,
+    "region": 137,
+    "proxy": 80,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 138,
+    "name": "Stygian Delta",
+    "type": 0,
+    "region": 130,
+    "proxy": 81,
+    "enabled": true,
+    "originX": 294912,
+    "originY": 393216
+  },
+  {
+    "id": 139,
+    "name": "Land of Atum",
+    "type": 0,
+    "region": 130,
+    "proxy": 82,
+    "enabled": true,
+    "originX": 229376,
+    "originY": 393216
+  },
+  {
+    "id": 140,
+    "name": "Halls of Ma'ati",
+    "type": 2,
+    "region": 140,
+    "proxy": 83,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 141,
+    "name": "Typhon's Reach",
+    "type": 0,
+    "region": 130,
+    "proxy": 84,
+    "enabled": true,
+    "originX": 458752,
+    "originY": 524288
+  },
+  {
+    "id": 142,
+    "name": "Ashen Isles",
+    "type": 0,
+    "region": 130,
+    "proxy": 85,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 143,
+    "name": "Green Glades",
+    "type": 0,
+    "region": 130,
+    "proxy": 86,
+    "enabled": true,
+    "originX": 360448,
+    "originY": 655360
+  },
+  {
+    "id": 144,
+    "name": "Arbor Glen",
+    "type": 0,
+    "region": 130,
+    "proxy": 87,
+    "enabled": true,
+    "originX": 425984,
+    "originY": 655360
+  },
+  {
+    "id": 145,
+    "name": "the Great Pyramid of Stygia",
+    "type": 2,
+    "region": 145,
+    "proxy": 88,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 146,
+    "name": "Deep Volcanus",
+    "type": 2,
+    "region": 146,
+    "proxy": 89,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 147,
+    "name": "City of Aerus",
+    "type": 4,
+    "region": 147,
+    "proxy": 90,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 100,
+    "name": "Vale of Mularn",
+    "type": 0,
+    "region": 100,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 753664,
+    "originY": 671744
+  },
+  {
+    "id": 101,
+    "name": "East Svealand",
+    "type": 0,
+    "region": 100,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 720896,
+    "originY": 737280
+  },
+  {
+    "id": 102,
+    "name": "West Svealand",
+    "type": 0,
+    "region": 100,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 655360,
+    "originY": 737280
+  },
+  {
+    "id": 103,
+    "name": "Gotar",
+    "type": 0,
+    "region": 100,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 720896,
+    "originY": 802816
+  },
+  {
+    "id": 104,
+    "name": "Muspelheim",
+    "type": 0,
+    "region": 100,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 819200,
+    "originY": 638976
+  },
+  {
+    "id": 105,
+    "name": "Myrkwood Forest",
+    "type": 0,
+    "region": 100,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 753664,
+    "originY": 868352
+  },
+  {
+    "id": 106,
+    "name": "Skona Ravine",
+    "type": 0,
+    "region": 100,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 688128,
+    "originY": 901120
+  },
+  {
+    "id": 107,
+    "name": "Vanern Swamp",
+    "type": 0,
+    "region": 100,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 622592,
+    "originY": 868352
+  },
+  {
+    "id": 108,
+    "name": "Raumarik",
+    "type": 0,
+    "region": 100,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 589824,
+    "originY": 737280
+  },
+  {
+    "id": 111,
+    "name": "Uppland",
+    "type": 0,
+    "region": 100,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 720896,
+    "originY": 606208
+  },
+  {
+    "id": 112,
+    "name": "Yggdra Forest",
+    "type": 0,
+    "region": 100,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 655360,
+    "originY": 671744
+  },
+  {
+    "id": 113,
+    "name": "Jamtland Mountains",
+    "type": 0,
+    "region": 100,
+    "proxy": -1,
+    "enabled": false,
+    "originX": 655360,
+    "originY": 606208
+  },
+  {
+    "id": 115,
+    "name": "Odin's Gate",
+    "type": 0,
+    "region": 100,
+    "proxy": -1,
+    "enabled": false,
+    "originX": 589824,
+    "originY": 573440
+  },
+  {
+    "id": 116,
+    "name": "Malmohus",
+    "type": 0,
+    "region": 100,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 688128,
+    "originY": 966656
+  },
+  {
+    "id": 120,
+    "name": "Jordheim",
+    "type": 1,
+    "region": 101,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 125,
+    "name": "Spindelhalla",
+    "type": 2,
+    "region": 125,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 126,
+    "name": "Vendo Caverns",
+    "type": 2,
+    "region": 126,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 127,
+    "name": "Varulvhamn",
+    "type": 2,
+    "region": 127,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 128,
+    "name": "Cursed Tomb",
+    "type": 2,
+    "region": 128,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 129,
+    "name": "Nisse's Lair",
+    "type": 2,
+    "region": 129,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 114,
+    "name": "Erikstaad",
+    "type": 3,
+    "region": 102,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 118,
+    "name": "Carlingford",
+    "type": 3,
+    "region": 102,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 589824,
+    "originY": 524288
+  },
+  {
+    "id": 119,
+    "name": "Wyndham",
+    "type": 3,
+    "region": 102,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 589824
+  },
+  {
+    "id": 117,
+    "name": "Arothi",
+    "type": 3,
+    "region": 102,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 458752
+  },
+  {
+    "id": 121,
+    "name": "Frisia",
+    "type": 3,
+    "region": 102,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 589824,
+    "originY": 589824
+  },
+  {
+    "id": 122,
+    "name": "Kaupang",
+    "type": 3,
+    "region": 102,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 589824,
+    "originY": 458752
+  },
+  {
+    "id": 266,
+    "name": "Holmestrand",
+    "type": 3,
+    "region": 102,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 655360,
+    "originY": 524288
+  },
+  {
+    "id": 150,
+    "name": "Trollheim",
+    "type": 2,
+    "region": 150,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 151,
+    "name": "Aegir's Landing",
+    "type": 0,
+    "region": 151,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 245760,
+    "originY": 311296
+  },
+  {
+    "id": 152,
+    "name": "Gripklosa Mountains",
+    "type": 0,
+    "region": 151,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 278528,
+    "originY": 245760
+  },
+  {
+    "id": 153,
+    "name": "Delling Crater",
+    "type": 0,
+    "region": 151,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 344064,
+    "originY": 262144
+  },
+  {
+    "id": 154,
+    "name": "Faraheim",
+    "type": 0,
+    "region": 151,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 360448,
+    "originY": 327680
+  },
+  {
+    "id": 155,
+    "name": "Munin Sound",
+    "type": 0,
+    "region": 151,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 294912,
+    "originY": 376832
+  },
+  {
+    "id": 156,
+    "name": "Iarnwood",
+    "type": 0,
+    "region": 151,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 393216,
+    "originY": 393216
+  },
+  {
+    "id": 157,
+    "name": "Dummy Zone",
+    "type": 0,
+    "region": 151,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 278528,
+    "originY": 180224
+  },
+  {
+    "id": 158,
+    "name": "Modernagrav",
+    "type": 0,
+    "region": 151,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 425984,
+    "originY": 327680
+  },
+  {
+    "id": 160,
+    "name": "Tuscaran Glacier",
+    "type": 2,
+    "region": 160,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 161,
+    "name": "Iarnvidiur's Lair",
+    "type": 2,
+    "region": 161,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 200,
+    "name": "Lough Derg",
+    "type": 0,
+    "region": 200,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 319488,
+    "originY": 483328
+  },
+  {
+    "id": 201,
+    "name": "Silvermine Mts.",
+    "type": 0,
+    "region": 200,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 319488,
+    "originY": 548864
+  },
+  {
+    "id": 202,
+    "name": "Shannon Estuary",
+    "type": 0,
+    "region": 200,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 286720,
+    "originY": 614400
+  },
+  {
+    "id": 203,
+    "name": "Cliffs of Moher",
+    "type": 0,
+    "region": 200,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 221184,
+    "originY": 417792
+  },
+  {
+    "id": 204,
+    "name": "Lough Gur",
+    "type": 0,
+    "region": 200,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 286720,
+    "originY": 679936
+  },
+  {
+    "id": 205,
+    "name": "Bog of Cullen",
+    "type": 0,
+    "region": 200,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 352256,
+    "originY": 712704
+  },
+  {
+    "id": 206,
+    "name": "Valley of Bri Leith",
+    "type": 0,
+    "region": 200,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 385024,
+    "originY": 483328
+  },
+  {
+    "id": 207,
+    "name": "Connacht",
+    "type": 0,
+    "region": 200,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 286720,
+    "originY": 417792
+  },
+  {
+    "id": 208,
+    "name": "Cursed Forest",
+    "type": 0,
+    "region": 200,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 450560,
+    "originY": 483328
+  },
+  {
+    "id": 209,
+    "name": "Tir na Nog",
+    "type": 1,
+    "region": 201,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 210,
+    "name": "Mount Collory",
+    "type": 0,
+    "region": 200,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 385024,
+    "originY": 417792
+  },
+  {
+    "id": 211,
+    "name": "Cruachan Gorge",
+    "type": 0,
+    "region": 200,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 319488,
+    "originY": 352256
+  },
+  {
+    "id": 212,
+    "name": "Breifine",
+    "type": 0,
+    "region": 200,
+    "proxy": -1,
+    "enabled": false,
+    "originX": 385024,
+    "originY": 352256
+  },
+  {
+    "id": 214,
+    "name": "Emain Macha",
+    "type": 0,
+    "region": 200,
+    "proxy": -1,
+    "enabled": false,
+    "originX": 417792,
+    "originY": 286720
+  },
+  {
+    "id": 216,
+    "name": "Sheeroe Hills",
+    "type": 0,
+    "region": 200,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 352256,
+    "originY": 647168
+  },
+  {
+    "id": 220,
+    "name": "Coruscating Mine",
+    "type": 2,
+    "region": 220,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 221,
+    "name": "Muire Tomb",
+    "type": 2,
+    "region": 221,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 222,
+    "name": "Spraggon Den",
+    "type": 2,
+    "region": 222,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 223,
+    "name": "Koalinth Caverns",
+    "type": 2,
+    "region": 223,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 224,
+    "name": "Treibh Caillte",
+    "type": 2,
+    "region": 224,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 213,
+    "name": "Meath",
+    "type": 3,
+    "region": 202,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 217,
+    "name": "Torrylin",
+    "type": 3,
+    "region": 202,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 589824
+  },
+  {
+    "id": 218,
+    "name": "Kilcullen",
+    "type": 3,
+    "region": 202,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 589824,
+    "originY": 524288
+  },
+  {
+    "id": 215,
+    "name": "Dunshire",
+    "type": 3,
+    "region": 202,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 458752,
+    "originY": 524288
+  },
+  {
+    "id": 219,
+    "name": "Saeranthal",
+    "type": 3,
+    "region": 202,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 458752,
+    "originY": 589824
+  },
+  {
+    "id": 225,
+    "name": "Aberillan",
+    "type": 3,
+    "region": 202,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 589824,
+    "originY": 589824
+  },
+  {
+    "id": 272,
+    "name": "Tullamore",
+    "type": 3,
+    "region": 202,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 655360
+  },
+  {
+    "id": 180,
+    "name": "Fomor",
+    "type": 2,
+    "region": 180,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 181,
+    "name": "Domnann",
+    "type": 0,
+    "region": 181,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 393216,
+    "originY": 393216
+  },
+  {
+    "id": 182,
+    "name": "Caillte Garran",
+    "type": 0,
+    "region": 181,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 327680,
+    "originY": 360448
+  },
+  {
+    "id": 183,
+    "name": "Vale of Balor",
+    "type": 0,
+    "region": 181,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 262144,
+    "originY": 327680
+  },
+  {
+    "id": 184,
+    "name": "Cothrom Gorge",
+    "type": 0,
+    "region": 181,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 278528,
+    "originY": 262144
+  },
+  {
+    "id": 185,
+    "name": "World's End",
+    "type": 0,
+    "region": 181,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 344064,
+    "originY": 229376
+  },
+  {
+    "id": 186,
+    "name": "Vigilant Rock",
+    "type": 0,
+    "region": 181,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 376832,
+    "originY": 294912
+  },
+  {
+    "id": 187,
+    "name": "Allta Fearann",
+    "type": 0,
+    "region": 181,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 344064,
+    "originY": 163840
+  },
+  {
+    "id": 190,
+    "name": "Tur Suil",
+    "type": 2,
+    "region": 190,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 191,
+    "name": "Galladoria",
+    "type": 2,
+    "region": 191,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 231,
+    "name": "ArtOutside",
+    "type": 0,
+    "region": 231,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 232,
+    "name": "ArtInside",
+    "type": 2,
+    "region": 232,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 247,
+    "name": "Catacomb Figure Demo",
+    "type": 2,
+    "region": 247,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 48,
+    "name": "Unused Mine",
+    "type": 2,
+    "region": 48,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 49,
+    "name": "Rugnog's Haven",
+    "type": 2,
+    "region": 49,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 58,
+    "name": "Underground Forest",
+    "type": 4,
+    "region": 58,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 59,
+    "name": "Glashtin Forges",
+    "type": 2,
+    "region": 59,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 63,
+    "name": "Roman Aqueducts",
+    "type": 2,
+    "region": 63,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 65,
+    "name": "Inconnu Crypt",
+    "type": 2,
+    "region": 65,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 66,
+    "name": "Underground Forest",
+    "type": 4,
+    "region": 66,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 67,
+    "name": "Deadlands of Annwn",
+    "type": 4,
+    "region": 67,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 68,
+    "name": "Lower Crypt",
+    "type": 2,
+    "region": 68,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 69,
+    "name": "the Darkspire",
+    "type": 2,
+    "region": 69,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 92,
+    "name": "Veil Rift",
+    "type": 2,
+    "region": 92,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 93,
+    "name": "Shar Labyrinth",
+    "type": 2,
+    "region": 93,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 94,
+    "name": "The Queen's Labyrinth",
+    "type": 2,
+    "region": 94,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 95,
+    "name": "The Frontlines",
+    "type": 4,
+    "region": 95,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 96,
+    "name": "Underground Forest",
+    "type": 4,
+    "region": 96,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 97,
+    "name": "Deadlands of Annwn",
+    "type": 4,
+    "region": 97,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 98,
+    "name": "the Darkspire",
+    "type": 2,
+    "region": 98,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 99,
+    "name": "Glashtin Forge",
+    "type": 2,
+    "region": 99,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 109,
+    "name": "The Frontlines",
+    "type": 4,
+    "region": 109,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 148,
+    "name": "The Frontlines",
+    "type": 4,
+    "region": 148,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 149,
+    "name": "Nyttheim",
+    "type": 2,
+    "region": 149,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 162,
+    "name": "Deadlands of Annwn",
+    "type": 4,
+    "region": 162,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 188,
+    "name": "the Darkspire",
+    "type": 2,
+    "region": 188,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 189,
+    "name": "Glashtin Forge",
+    "type": 2,
+    "region": 189,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 195,
+    "name": "The Otherworld",
+    "type": 4,
+    "region": 195,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 196,
+    "name": "The Otherworld",
+    "type": 4,
+    "region": 196,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 197,
+    "name": "The Otherworld",
+    "type": 4,
+    "region": 197,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 226,
+    "name": "Abandoned Mines",
+    "type": 2,
+    "region": 226,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 227,
+    "name": "Abandoned Mines",
+    "type": 2,
+    "region": 227,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 228,
+    "name": "Abandoned Mines",
+    "type": 2,
+    "region": 228,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 229,
+    "name": "Burial Grounds",
+    "type": 2,
+    "region": 229,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 230,
+    "name": "Catacomb Test Dungeon",
+    "type": 2,
+    "region": 230,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 243,
+    "name": "Kobold Undercity",
+    "type": 2,
+    "region": 243,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 300,
+    "name": "Damp Cavern",
+    "type": 2,
+    "region": 300,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 301,
+    "name": "Damp Cavern",
+    "type": 2,
+    "region": 301,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 302,
+    "name": "Damp Cavern",
+    "type": 2,
+    "region": 302,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 303,
+    "name": "Damp Cavern",
+    "type": 2,
+    "region": 303,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 304,
+    "name": "Damp Cavern",
+    "type": 2,
+    "region": 304,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 305,
+    "name": "Stone Confinement",
+    "type": 2,
+    "region": 305,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 306,
+    "name": "Stone Confinement",
+    "type": 2,
+    "region": 306,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 307,
+    "name": "Stone Confinement",
+    "type": 2,
+    "region": 307,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 308,
+    "name": "Stone Confinement",
+    "type": 2,
+    "region": 308,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 309,
+    "name": "Stone Confinement",
+    "type": 2,
+    "region": 309,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 310,
+    "name": "Concealed Guardhouse",
+    "type": 2,
+    "region": 310,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 311,
+    "name": "Concealed Guardhouse",
+    "type": 2,
+    "region": 311,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 312,
+    "name": "Concealed Guardhouse",
+    "type": 2,
+    "region": 312,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 313,
+    "name": "Concealed Guardhouse",
+    "type": 2,
+    "region": 313,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 314,
+    "name": "Concealed Guardhouse",
+    "type": 2,
+    "region": 314,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 315,
+    "name": "Hidden Lair",
+    "type": 2,
+    "region": 315,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 316,
+    "name": "Hidden Lair",
+    "type": 2,
+    "region": 316,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 317,
+    "name": "Hidden Lair",
+    "type": 2,
+    "region": 317,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 318,
+    "name": "Hidden Lair",
+    "type": 2,
+    "region": 318,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 319,
+    "name": "Hidden Lair",
+    "type": 2,
+    "region": 319,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 320,
+    "name": "Underground Tunnel",
+    "type": 2,
+    "region": 320,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 321,
+    "name": "Underground Tunnel",
+    "type": 2,
+    "region": 321,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 322,
+    "name": "Underground Tunnel",
+    "type": 2,
+    "region": 322,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 323,
+    "name": "Underground Tunnel",
+    "type": 2,
+    "region": 323,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 324,
+    "name": "Underground Tunnel",
+    "type": 2,
+    "region": 324,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 325,
+    "name": "The Corrupted City",
+    "type": 2,
+    "region": 325,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 326,
+    "name": "the Ravaged Realm",
+    "type": 2,
+    "region": 326,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 327,
+    "name": "Caverns of Madness",
+    "type": 2,
+    "region": 327,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 328,
+    "name": "Land of Unrest",
+    "type": 2,
+    "region": 328,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 329,
+    "name": "Jarlsberg's Hideout",
+    "type": 2,
+    "region": 329,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 330,
+    "name": "Burial AW3",
+    "type": 2,
+    "region": 330,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 331,
+    "name": "Thieves Den",
+    "type": 2,
+    "region": 331,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 332,
+    "name": "Rebel Half Orc Lair",
+    "type": 2,
+    "region": 332,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 333,
+    "name": "The Haunted Halls",
+    "type": 2,
+    "region": 333,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 334,
+    "name": "Lost Area",
+    "type": 2,
+    "region": 334,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 335,
+    "name": "Caved In Tunnel",
+    "type": 2,
+    "region": 335,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 345,
+    "name": "Tomte Prison",
+    "type": 2,
+    "region": 345,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 346,
+    "name": "Nisse's Retreat",
+    "type": 2,
+    "region": 346,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 347,
+    "name": "Tomte Town",
+    "type": 2,
+    "region": 347,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 348,
+    "name": "Tomte Town",
+    "type": 2,
+    "region": 348,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 349,
+    "name": "Lios's Eternal Rest",
+    "type": 2,
+    "region": 349,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 350,
+    "name": "Liche's Unrest",
+    "type": 2,
+    "region": 350,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 351,
+    "name": "Cursed Tomb AW3",
+    "type": 2,
+    "region": 351,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 352,
+    "name": "Cursed Tomb AW4",
+    "type": 2,
+    "region": 352,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 353,
+    "name": "Den of Bones",
+    "type": 2,
+    "region": 353,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 354,
+    "name": "The Ritual Chamber",
+    "type": 2,
+    "region": 354,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 355,
+    "name": "Vendo AW3",
+    "type": 2,
+    "region": 355,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 356,
+    "name": "Vendo AW4",
+    "type": 2,
+    "region": 356,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 357,
+    "name": "The Cursed Lair",
+    "type": 2,
+    "region": 357,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 358,
+    "name": "The Burrow",
+    "type": 2,
+    "region": 358,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 359,
+    "name": "Varulvhamn AW3",
+    "type": 2,
+    "region": 359,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 360,
+    "name": "Varulvhamn AW4",
+    "type": 2,
+    "region": 360,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 361,
+    "name": "Arachnid's Labyrinth",
+    "type": 2,
+    "region": 361,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 362,
+    "name": "The Master's Lair",
+    "type": 2,
+    "region": 362,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 363,
+    "name": "Spindelhalla AW3",
+    "type": 2,
+    "region": 363,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 364,
+    "name": "Spindelhalla AW4",
+    "type": 2,
+    "region": 364,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 365,
+    "name": "Bandit Lair",
+    "type": 2,
+    "region": 365,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 366,
+    "name": "Gnoll Lair",
+    "type": 2,
+    "region": 366,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 367,
+    "name": "Vandr's Bane",
+    "type": 2,
+    "region": 367,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 368,
+    "name": "Past and Present",
+    "type": 2,
+    "region": 368,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 369,
+    "name": "Half-Orc Camp",
+    "type": 2,
+    "region": 369,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 370,
+    "name": "Brutal Realization",
+    "type": 2,
+    "region": 370,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 371,
+    "name": "History Repeats Itself",
+    "type": 2,
+    "region": 371,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 372,
+    "name": "Hounds of Arwan",
+    "type": 2,
+    "region": 372,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 373,
+    "name": "Passage of Echoes",
+    "type": 2,
+    "region": 373,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 374,
+    "name": "Unrestful Tomb",
+    "type": 2,
+    "region": 374,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 375,
+    "name": "Lost Passages",
+    "type": 2,
+    "region": 375,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 376,
+    "name": "Goblin's Cookery",
+    "type": 2,
+    "region": 376,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 377,
+    "name": "The Beastmaster's Den",
+    "type": 2,
+    "region": 377,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 378,
+    "name": "Tepok_AW3",
+    "type": 2,
+    "region": 378,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 379,
+    "name": "Tepok_AW4",
+    "type": 2,
+    "region": 379,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 380,
+    "name": "Lair of Doom",
+    "type": 2,
+    "region": 380,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 381,
+    "name": "The Arena",
+    "type": 2,
+    "region": 381,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 382,
+    "name": "Catacombs_AW3",
+    "type": 2,
+    "region": 382,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 383,
+    "name": "Catacombs_AW4",
+    "type": 2,
+    "region": 383,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 384,
+    "name": "The Ritual Hall",
+    "type": 2,
+    "region": 384,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 385,
+    "name": "The Betrayer's Den",
+    "type": 2,
+    "region": 385,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 386,
+    "name": "Keltoi_AW3",
+    "type": 2,
+    "region": 386,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 387,
+    "name": "Keltoi_AW4",
+    "type": 2,
+    "region": 387,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 388,
+    "name": "Tunnels of Darkness",
+    "type": 2,
+    "region": 388,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 389,
+    "name": "Shafts of the Tenebrae",
+    "type": 2,
+    "region": 389,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 390,
+    "name": "Lair of the Exiled",
+    "type": 2,
+    "region": 390,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 391,
+    "name": "Alb AbMines AW4",
+    "type": 2,
+    "region": 391,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 392,
+    "name": "The Hall of Reawakening",
+    "type": 2,
+    "region": 392,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 393,
+    "name": "The Hidden Crypt",
+    "type": 2,
+    "region": 393,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 394,
+    "name": "Mithra_AW3",
+    "type": 2,
+    "region": 394,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 395,
+    "name": "Mithra_AW4",
+    "type": 2,
+    "region": 395,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 396,
+    "name": "Depths of Despair",
+    "type": 2,
+    "region": 396,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 397,
+    "name": "the Realm of the Damned",
+    "type": 2,
+    "region": 397,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 398,
+    "name": "Lower Crypt AW",
+    "type": 2,
+    "region": 398,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 399,
+    "name": "Lower Crypt AW",
+    "type": 2,
+    "region": 399,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 400,
+    "name": "Burial Tomb",
+    "type": 2,
+    "region": 400,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 401,
+    "name": "Burial Tomb",
+    "type": 2,
+    "region": 401,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 402,
+    "name": "Burial Tomb",
+    "type": 2,
+    "region": 402,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 403,
+    "name": "Burial Tomb",
+    "type": 2,
+    "region": 403,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 404,
+    "name": "Burial Tomb",
+    "type": 2,
+    "region": 404,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 405,
+    "name": "Desecrated Grounds",
+    "type": 2,
+    "region": 405,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 406,
+    "name": "Desecrated Grounds",
+    "type": 2,
+    "region": 406,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 407,
+    "name": "Desecrated Grounds",
+    "type": 2,
+    "region": 407,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 408,
+    "name": "Desecrated Grounds",
+    "type": 2,
+    "region": 408,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 409,
+    "name": "Desecrated Grounds",
+    "type": 2,
+    "region": 409,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 410,
+    "name": "the Lost Lair",
+    "type": 2,
+    "region": 410,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 411,
+    "name": "the Lost Lair",
+    "type": 2,
+    "region": 411,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 412,
+    "name": "the Lost Lair",
+    "type": 2,
+    "region": 412,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 413,
+    "name": "the Lost Lair",
+    "type": 2,
+    "region": 413,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 414,
+    "name": "the Lost Lair",
+    "type": 2,
+    "region": 414,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 415,
+    "name": "Unhallow Grounds",
+    "type": 2,
+    "region": 415,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 416,
+    "name": "Unhallow Grounds",
+    "type": 2,
+    "region": 416,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 417,
+    "name": "Unhallow Grounds",
+    "type": 2,
+    "region": 417,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 418,
+    "name": "Unhallow Grounds",
+    "type": 2,
+    "region": 418,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 419,
+    "name": "Unhallow Grounds",
+    "type": 2,
+    "region": 419,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 420,
+    "name": "the Sundered Tombs",
+    "type": 2,
+    "region": 420,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 421,
+    "name": "the Sundered Tombs",
+    "type": 2,
+    "region": 421,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 422,
+    "name": "the Sundered Tombs",
+    "type": 2,
+    "region": 422,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 423,
+    "name": "the Sundered Tombs",
+    "type": 2,
+    "region": 423,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 424,
+    "name": "the Sundered Tombs",
+    "type": 2,
+    "region": 424,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 425,
+    "name": "The Lost Wing",
+    "type": 2,
+    "region": 425,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 426,
+    "name": "Deliah's Sanctuary",
+    "type": 2,
+    "region": 426,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 427,
+    "name": "Stonehenge AW3",
+    "type": 2,
+    "region": 427,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 428,
+    "name": "Stonehenge AW4",
+    "type": 2,
+    "region": 428,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 429,
+    "name": "Snyblem's Lair",
+    "type": 2,
+    "region": 429,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 430,
+    "name": "the Plutonian Shore",
+    "type": 2,
+    "region": 430,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 431,
+    "name": "Aqueduct AW3",
+    "type": 2,
+    "region": 431,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 432,
+    "name": "Aqueduct AW4",
+    "type": 2,
+    "region": 432,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 433,
+    "name": "Snarg's Grotto",
+    "type": 2,
+    "region": 433,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 434,
+    "name": "Maze of Tribulation",
+    "type": 2,
+    "region": 434,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 435,
+    "name": "The Smelting Pot",
+    "type": 2,
+    "region": 435,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 436,
+    "name": "Forges of Flame",
+    "type": 2,
+    "region": 436,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 437,
+    "name": "Hammer Hugak's Smithy",
+    "type": 2,
+    "region": 437,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 438,
+    "name": "the Goblin Workshop",
+    "type": 2,
+    "region": 438,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 439,
+    "name": "Wolak's Crucible",
+    "type": 2,
+    "region": 439,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 440,
+    "name": "the Gargoyle Breeding Grounds",
+    "type": 2,
+    "region": 440,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 442,
+    "name": "The Steward's Crypt",
+    "type": 2,
+    "region": 442,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 443,
+    "name": "Serf's Folly",
+    "type": 2,
+    "region": 443,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 444,
+    "name": "Muire AW",
+    "type": 2,
+    "region": 444,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 445,
+    "name": "Muire AW4",
+    "type": 2,
+    "region": 445,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 446,
+    "name": "Veil Rift",
+    "type": 2,
+    "region": 446,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 447,
+    "name": "Veil Rift",
+    "type": 2,
+    "region": 447,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 448,
+    "name": "Veil Rift AW3",
+    "type": 4,
+    "region": 448,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 449,
+    "name": "Veil Rift AW4",
+    "type": 4,
+    "region": 449,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 450,
+    "name": "The Cursed Burrow",
+    "type": 2,
+    "region": 450,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 451,
+    "name": "The Cursed Burrow",
+    "type": 2,
+    "region": 451,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 452,
+    "name": "The Cursed Burrow",
+    "type": 2,
+    "region": 452,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 453,
+    "name": "The Cursed Burrow",
+    "type": 2,
+    "region": 453,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 454,
+    "name": "The Cursed Burrow",
+    "type": 2,
+    "region": 454,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 455,
+    "name": "Dusty Tomb",
+    "type": 2,
+    "region": 455,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 456,
+    "name": "Dusty Tomb",
+    "type": 2,
+    "region": 456,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 457,
+    "name": "Dusty Tomb",
+    "type": 2,
+    "region": 457,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 458,
+    "name": "Dusty Tomb",
+    "type": 2,
+    "region": 458,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 459,
+    "name": "Dusty Tomb",
+    "type": 2,
+    "region": 459,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 460,
+    "name": "Enclosed Tunnel",
+    "type": 2,
+    "region": 460,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 461,
+    "name": "Enclosed Tunnel",
+    "type": 2,
+    "region": 461,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 462,
+    "name": "Enclosed Tunnel",
+    "type": 2,
+    "region": 462,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 463,
+    "name": "Enclosed Tunnel",
+    "type": 2,
+    "region": 463,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 464,
+    "name": "Enclosed Tunnel",
+    "type": 2,
+    "region": 464,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 465,
+    "name": "Dark Cavern",
+    "type": 2,
+    "region": 465,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 466,
+    "name": "Dark Cavern",
+    "type": 2,
+    "region": 466,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 467,
+    "name": "Dark Cavern",
+    "type": 2,
+    "region": 467,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 468,
+    "name": "Dark Cavern",
+    "type": 2,
+    "region": 468,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 469,
+    "name": "Dark Cavern",
+    "type": 2,
+    "region": 469,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 470,
+    "name": "Half Orc Command Post",
+    "type": 2,
+    "region": 470,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 471,
+    "name": "Unused Mine",
+    "type": 2,
+    "region": 471,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 472,
+    "name": "Unused Mine",
+    "type": 2,
+    "region": 472,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 473,
+    "name": "Unused Mine",
+    "type": 2,
+    "region": 473,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 474,
+    "name": "Unused Mine",
+    "type": 2,
+    "region": 474,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 475,
+    "name": "Den of Suffering",
+    "type": 2,
+    "region": 475,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 476,
+    "name": "Death from Below",
+    "type": 2,
+    "region": 476,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 479,
+    "name": "The Ancient's Retreat",
+    "type": 2,
+    "region": 479,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 480,
+    "name": "The Shaman's Inner Sanctum",
+    "type": 2,
+    "region": 480,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 483,
+    "name": "The Brawler's Den",
+    "type": 2,
+    "region": 483,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 484,
+    "name": "Felena's Sorrow",
+    "type": 2,
+    "region": 484,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 487,
+    "name": "The Pit of Despair",
+    "type": 2,
+    "region": 487,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 488,
+    "name": "The Forgotten Vein",
+    "type": 2,
+    "region": 488,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 491,
+    "name": "Maze of Madness",
+    "type": 2,
+    "region": 491,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 492,
+    "name": "the Shattered Lands",
+    "type": 2,
+    "region": 492,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 493,
+    "name": "Shar Labyrinth",
+    "type": 2,
+    "region": 493,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 494,
+    "name": "the Wolves Den",
+    "type": 2,
+    "region": 494,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 495,
+    "name": "Inner Sanctum",
+    "type": 2,
+    "region": 495,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 496,
+    "name": "the Deep",
+    "type": 2,
+    "region": 496,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 497,
+    "name": "Mid Launch",
+    "type": 2,
+    "region": 497,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 498,
+    "name": "Alb Launch",
+    "type": 2,
+    "region": 498,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 499,
+    "name": "Alb Launch",
+    "type": 2,
+    "region": 499,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 233,
+    "name": "Summoner's Hall",
+    "type": 2,
+    "region": 233,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 244,
+    "name": "Passage of Conflict",
+    "type": 2,
+    "region": 244,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 249,
+    "name": "Darkness Falls",
+    "type": 2,
+    "region": 249,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 8192,
+    "originY": 8192
+  },
+  {
+    "id": 234,
+    "name": "The Proving Grounds",
+    "type": 0,
+    "region": 234,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 235,
+    "name": "The Lions Den",
+    "type": 0,
+    "region": 235,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 236,
+    "name": "The Hills of Claret",
+    "type": 0,
+    "region": 236,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 237,
+    "name": "Killaloe",
+    "type": 0,
+    "region": 237,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 238,
+    "name": "Thidranki",
+    "type": 0,
+    "region": 238,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 239,
+    "name": "Braemar",
+    "type": 0,
+    "region": 239,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 240,
+    "name": "Wilton",
+    "type": 0,
+    "region": 240,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 241,
+    "name": "Molvik",
+    "type": 0,
+    "region": 241,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 242,
+    "name": "TestBG",
+    "type": 0,
+    "region": 242,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 524288,
+    "originY": 524288
+  },
+  {
+    "id": 254,
+    "name": "Leirvik",
+    "type": 0,
+    "region": 242,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 262144,
+    "originY": 262144
+  },
+  {
+    "id": 163,
+    "name": "North Sea",
+    "type": 0,
+    "region": 163,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 491520,
+    "originY": 458752
+  },
+  {
+    "id": 164,
+    "name": "Irish Sea",
+    "type": 0,
+    "region": 163,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 491520,
+    "originY": 524288
+  },
+  {
+    "id": 167,
+    "name": "Odin's Gate",
+    "type": 0,
+    "region": 163,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 491520,
+    "originY": 393216
+  },
+  {
+    "id": 168,
+    "name": "Jamtland Mountains",
+    "type": 0,
+    "region": 163,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 557056,
+    "originY": 393216
+  },
+  {
+    "id": 169,
+    "name": "Yggdra Forest",
+    "type": 0,
+    "region": 163,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 622592,
+    "originY": 393216
+  },
+  {
+    "id": 170,
+    "name": "Uppland",
+    "type": 0,
+    "region": 163,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 557056,
+    "originY": 327680
+  },
+  {
+    "id": 171,
+    "name": "Emain Macha",
+    "type": 0,
+    "region": 163,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 425984,
+    "originY": 491520
+  },
+  {
+    "id": 172,
+    "name": "Breifine",
+    "type": 0,
+    "region": 163,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 425984,
+    "originY": 557056
+  },
+  {
+    "id": 173,
+    "name": "Cruachan Gorge",
+    "type": 0,
+    "region": 163,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 360448,
+    "originY": 557056
+  },
+  {
+    "id": 174,
+    "name": "Mount Collory",
+    "type": 0,
+    "region": 163,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 425984,
+    "originY": 622592
+  },
+  {
+    "id": 175,
+    "name": "Snowdonia",
+    "type": 0,
+    "region": 163,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 557056,
+    "originY": 622592
+  },
+  {
+    "id": 176,
+    "name": "Forest Sauvage",
+    "type": 0,
+    "region": 163,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 622592,
+    "originY": 557056
+  },
+  {
+    "id": 177,
+    "name": "Pennine Mountains",
+    "type": 0,
+    "region": 163,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 557056,
+    "originY": 557056
+  },
+  {
+    "id": 178,
+    "name": "Hadrian's Wall",
+    "type": 0,
+    "region": 163,
+    "proxy": -1,
+    "enabled": true,
+    "originX": 557056,
+    "originY": 491520
+  }
+]

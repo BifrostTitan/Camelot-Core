@@ -1,0 +1,6 @@
+[submodule "ThirdParty/DAoC-Client-Lib"]
+	path = ThirdParty/DAoC-Client-Lib
+	url = https://github.com/BifrostTitan/DAoC-Client-Lib.git
+[submodule "ThirdParty/daoc-niflib"]
+	path = ThirdParty/daoc-niflib
+	url = https://github.com/BifrostTitan/daoc-niflib.git

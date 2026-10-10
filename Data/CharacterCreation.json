@@ -1,0 +1,766 @@
+{
+  "races": [
+    {
+      "id": 1,
+      "name": "Briton",
+      "realm": 1,
+      "male": 32,
+      "female": 35,
+      "stats": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Highlander",
+      "realm": 1,
+      "male": 39,
+      "female": 43,
+      "stats": [
+        70,
+        50,
+        70,
+        50,
+        60,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Saracen",
+      "realm": 1,
+      "male": 48,
+      "female": 52,
+      "stats": [
+        50,
+        80,
+        50,
+        60,
+        60,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Avalonian",
+      "realm": 1,
+      "male": 61,
+      "female": 65,
+      "stats": [
+        45,
+        60,
+        45,
+        70,
+        80,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Inconnu",
+      "realm": 1,
+      "male": 716,
+      "female": 724,
+      "stats": [
+        50,
+        70,
+        60,
+        50,
+        70,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 16,
+      "name": "HalfOgre",
+      "realm": 1,
+      "male": 1008,
+      "female": 1020,
+      "stats": [
+        90,
+        40,
+        70,
+        40,
+        60,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Troll",
+      "realm": 2,
+      "male": 137,
+      "female": 145,
+      "stats": [
+        100,
+        35,
+        70,
+        35,
+        60,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Norseman",
+      "realm": 2,
+      "male": 503,
+      "female": 507,
+      "stats": [
+        70,
+        50,
+        70,
+        50,
+        60,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Kobold",
+      "realm": 2,
+      "male": 169,
+      "female": 177,
+      "stats": [
+        50,
+        70,
+        50,
+        70,
+        60,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Dwarf",
+      "realm": 2,
+      "male": 185,
+      "female": 193,
+      "stats": [
+        60,
+        50,
+        80,
+        50,
+        60,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Valkyn",
+      "realm": 2,
+      "male": 773,
+      "female": 781,
+      "stats": [
+        55,
+        65,
+        45,
+        75,
+        60,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Frostalf",
+      "realm": 2,
+      "male": 1051,
+      "female": 1063,
+      "stats": [
+        55,
+        55,
+        55,
+        60,
+        60,
+        75,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Firbolg",
+      "realm": 3,
+      "male": 286,
+      "female": 294,
+      "stats": [
+        90,
+        40,
+        60,
+        40,
+        60,
+        60,
+        70,
+        60
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Celt",
+      "realm": 3,
+      "male": 302,
+      "female": 310,
+      "stats": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Lurikeen",
+      "realm": 3,
+      "male": 318,
+      "female": 326,
+      "stats": [
+        40,
+        80,
+        40,
+        80,
+        60,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Elf",
+      "realm": 3,
+      "male": 334,
+      "female": 342,
+      "stats": [
+        40,
+        75,
+        40,
+        75,
+        70,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Sylvan",
+      "realm": 3,
+      "male": 700,
+      "female": 708,
+      "stats": [
+        70,
+        55,
+        60,
+        45,
+        70,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Shar",
+      "realm": 3,
+      "male": 1075,
+      "female": 1087,
+      "stats": [
+        60,
+        50,
+        80,
+        50,
+        60,
+        60,
+        60,
+        60
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "name": "Paladin",
+      "races": [
+        2,
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Armsman",
+      "races": [
+        2,
+        1,
+        16,
+        3,
+        13,
+        4
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Scout",
+      "races": [
+        1,
+        3,
+        13,
+        4
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Minstrel",
+      "races": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Theurgist",
+      "races": [
+        2,
+        1,
+        16
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Cleric",
+      "races": [
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Wizard",
+      "races": [
+        2,
+        1,
+        16
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Sorcerer",
+      "races": [
+        2,
+        1,
+        16,
+        13,
+        4
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Infiltrator",
+      "races": [
+        1,
+        3,
+        13,
+        4
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Friar",
+      "races": [
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Mercenary",
+      "races": [
+        2,
+        1,
+        16,
+        3,
+        13,
+        4
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Necromancer",
+      "races": [
+        1,
+        13,
+        4
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Cabalist",
+      "races": [
+        2,
+        1,
+        16,
+        13,
+        4
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Reaver",
+      "races": [
+        1,
+        13,
+        4
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Thane",
+      "races": [
+        7,
+        17,
+        5,
+        6
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Warrior",
+      "races": [
+        7,
+        8,
+        5,
+        6,
+        14
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Shadowblade",
+      "races": [
+        7,
+        17,
+        8,
+        5,
+        14
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Skald",
+      "races": [
+        7,
+        8,
+        5,
+        6
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Hunter",
+      "races": [
+        7,
+        17,
+        8,
+        5,
+        14
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Healer",
+      "races": [
+        7,
+        17,
+        5
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Spiritmaster",
+      "races": [
+        17,
+        8,
+        5
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Shaman",
+      "races": [
+        7,
+        17,
+        8,
+        6
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Runemaster",
+      "races": [
+        7,
+        17,
+        8,
+        5
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Bonedancer",
+      "races": [
+        8,
+        6,
+        14
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Berserker",
+      "races": [
+        7,
+        5,
+        6,
+        14
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Savage",
+      "races": [
+        7,
+        8,
+        5,
+        6,
+        14
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Heretic",
+      "races": [
+        2,
+        1,
+        13,
+        4
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Valkyrie",
+      "races": [
+        7,
+        17,
+        5,
+        14
+      ],
+      "gender": 1
+    },
+    {
+      "id": 39,
+      "name": "Bainshee",
+      "races": [
+        9,
+        11,
+        12
+      ],
+      "gender": 1
+    },
+    {
+      "id": 40,
+      "name": "Eldritch",
+      "races": [
+        11,
+        12
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Enchanter",
+      "races": [
+        11,
+        12
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Mentalist",
+      "races": [
+        9,
+        11,
+        12,
+        18
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Blademaster",
+      "races": [
+        9,
+        11,
+        10,
+        18
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Hero",
+      "races": [
+        9,
+        10,
+        12,
+        18,
+        15
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Champion",
+      "races": [
+        9,
+        11,
+        12,
+        18
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Warden",
+      "races": [
+        9,
+        10,
+        15
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Druid",
+      "races": [
+        9,
+        10,
+        15
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Bard",
+      "races": [
+        9,
+        10
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Nightshade",
+      "races": [
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Ranger",
+      "races": [
+        9,
+        11,
+        12,
+        18,
+        15
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Animist",
+      "races": [
+        9,
+        10,
+        15
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Valewalker",
+      "races": [
+        9,
+        10,
+        15
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Vampiir",
+      "races": [
+        9,
+        12,
+        18
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Warlock",
+      "races": [
+        17,
+        8,
+        5
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Mauler",
+      "races": [
+        1,
+        13
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Mauler",
+      "races": [
+        8,
+        5
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Mauler",
+      "races": [
+        9,
+        12
+      ]
+    }
+  ]
+}

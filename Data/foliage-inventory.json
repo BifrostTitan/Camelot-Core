@@ -1,0 +1,1582 @@
+[
+  {
+    "nif": "alder",
+    "species": "alder",
+    "descriptions": [
+      "Tree - Alder",
+      "Tree - alder",
+      "Tree - alder 2",
+      "Tree - alder 3"
+    ],
+    "placements": 527,
+    "zones": {
+      "181": 175,
+      "182": 109,
+      "183": 82,
+      "186": 161
+    }
+  },
+  {
+    "nif": "appletree",
+    "species": "apple",
+    "descriptions": [
+      "Apple Tree"
+    ],
+    "placements": 140,
+    "zones": {
+      "52": 140
+    }
+  },
+  {
+    "nif": "ash",
+    "species": "ash",
+    "descriptions": [
+      "Tree Ash"
+    ],
+    "placements": 719,
+    "zones": {
+      "151": 260,
+      "154": 30,
+      "155": 429
+    }
+  },
+  {
+    "nif": "b_htoak1",
+    "species": "oak",
+    "descriptions": [
+      "Haunted Oak"
+    ],
+    "placements": 36,
+    "zones": {
+      "8": 36
+    }
+  },
+  {
+    "nif": "beech",
+    "species": "elm",
+    "descriptions": [
+      "Beech (Elm 1)",
+      "Beech 1"
+    ],
+    "placements": 954,
+    "zones": {
+      "54": 503,
+      "56": 451
+    }
+  },
+  {
+    "nif": "beech_gnarl",
+    "species": "beech",
+    "descriptions": [
+      "Beech Gnarled",
+      "beech gnarled"
+    ],
+    "placements": 126,
+    "zones": {
+      "54": 60,
+      "56": 66
+    }
+  },
+  {
+    "nif": "bighibtree",
+    "species": "unclassified tree",
+    "descriptions": [
+      "Tree - Big Hib Tree",
+      "Tree - BigHibTree"
+    ],
+    "placements": 932,
+    "zones": {
+      "181": 282,
+      "182": 67,
+      "183": 66,
+      "186": 517
+    }
+  },
+  {
+    "nif": "bigpalm",
+    "species": "palm",
+    "descriptions": [
+      "Tree - BigPalm"
+    ],
+    "placements": 477,
+    "zones": {
+      "38": 159,
+      "81": 159,
+      "138": 159
+    }
+  },
+  {
+    "nif": "bigtree",
+    "species": "unclassified tree",
+    "descriptions": [
+      "Tree - Oceanus 3",
+      "Tree - Oceanus 3 Big Tree",
+      "Tree - Oceanus 3 BigTree",
+      "Tree - Oceanus 3 Bigtree",
+      "tree_oceanus_03 bigtree"
+    ],
+    "placements": 741,
+    "zones": {
+      "30": 27,
+      "31": 17,
+      "32": 47,
+      "33": 90,
+      "34": 29,
+      "70": 40,
+      "71": 30,
+      "72": 41,
+      "73": 27,
+      "74": 17,
+      "75": 47,
+      "76": 90,
+      "77": 29,
+      "130": 27,
+      "131": 17,
+      "132": 47,
+      "133": 90,
+      "134": 29
+    }
+  },
+  {
+    "nif": "bmtntre1",
+    "species": "unclassified tree",
+    "descriptions": [
+      "Mountain top Tree"
+    ],
+    "placements": 127,
+    "zones": {
+      "2": 127
+    }
+  },
+  {
+    "nif": "bonfire",
+    "species": "fir",
+    "descriptions": [
+      "BonFire"
+    ],
+    "placements": 1,
+    "zones": {
+      "12": 1
+    }
+  },
+  {
+    "nif": "bpinea",
+    "species": "pine",
+    "descriptions": [
+      "B-PineA",
+      "B-PineA - SMALL",
+      "New Pine tree (short)",
+      "Pine",
+      "Tree - bpineA",
+      "Tree-bpineA"
+    ],
+    "placements": 1326,
+    "zones": {
+      "0": 333,
+      "3": 94,
+      "7": 265,
+      "11": 390,
+      "12": 60,
+      "177": 48,
+      "178": 63,
+      "234": 51,
+      "235": 22
+    }
+  },
+  {
+    "nif": "bpineacl3",
+    "species": "pine",
+    "descriptions": [
+      "tree cluster - Bpine1",
+      "tree cluster - BpineA"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "bpinetree",
+    "species": "pine",
+    "descriptions": [
+      "B-Pinetree",
+      "B-Pinetree - SMALL",
+      "New Pine Tree (also short)",
+      "Pinetree",
+      "Tree - Bpinetree",
+      "Tree-Bpinetree"
+    ],
+    "placements": 906,
+    "zones": {
+      "3": 88,
+      "7": 243,
+      "9": 73,
+      "11": 359,
+      "12": 130,
+      "235": 13
+    }
+  },
+  {
+    "nif": "btaltre1",
+    "species": "unclassified tree",
+    "descriptions": [
+      "Tall Skinny"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "bvrgrn1",
+    "species": "pine",
+    "descriptions": [
+      "British Evergreen",
+      "Bush",
+      "Evergreen 1",
+      "tree - Evergreen"
+    ],
+    "placements": 1259,
+    "zones": {
+      "1": 34,
+      "2": 131,
+      "6": 381,
+      "8": 427,
+      "9": 51,
+      "10": 59,
+      "11": 176
+    }
+  },
+  {
+    "nif": "bwearytree",
+    "species": "unclassified tree",
+    "descriptions": [
+      "Wearyall Tree"
+    ],
+    "placements": 1,
+    "zones": {
+      "52": 1
+    }
+  },
+  {
+    "nif": "bwillow",
+    "species": "willow",
+    "descriptions": [
+      "Apple Tree",
+      "Tree - Willow",
+      "Tree-Willow",
+      "Willow",
+      "Willow - Brit",
+      "Willow 1",
+      "Willow 2"
+    ],
+    "placements": 2647,
+    "zones": {
+      "0": 33,
+      "1": 5,
+      "9": 543,
+      "10": 27,
+      "11": 90,
+      "52": 73,
+      "54": 3,
+      "56": 10,
+      "57": 81,
+      "177": 185,
+      "178": 262,
+      "181": 53,
+      "182": 15,
+      "183": 28,
+      "202": 243,
+      "204": 221,
+      "205": 198,
+      "234": 110,
+      "235": 45,
+      "236": 67,
+      "237": 233,
+      "238": 65,
+      "240": 33,
+      "241": 24
+    }
+  },
+  {
+    "nif": "campfire",
+    "species": "fir",
+    "descriptions": [
+      "Campfire",
+      "campfire"
+    ],
+    "placements": 64,
+    "zones": {
+      "0": 3,
+      "1": 6,
+      "2": 3,
+      "7": 1,
+      "12": 14,
+      "52": 2,
+      "53": 2,
+      "100": 4,
+      "101": 2,
+      "102": 3,
+      "103": 1,
+      "105": 1,
+      "107": 1,
+      "111": 1,
+      "112": 2,
+      "167": 1,
+      "168": 1,
+      "177": 3,
+      "200": 1,
+      "201": 1,
+      "202": 2,
+      "203": 2,
+      "204": 3,
+      "206": 2,
+      "207": 1,
+      "210": 1
+    }
+  },
+  {
+    "nif": "cedar",
+    "species": "cedar",
+    "descriptions": [
+      "Tree - Oceanus 1",
+      "Tree - Oceanus 1 Cedar",
+      "tree_oceanus_01 cedar"
+    ],
+    "placements": 868,
+    "zones": {
+      "30": 36,
+      "31": 25,
+      "32": 50,
+      "33": 86,
+      "34": 50,
+      "70": 43,
+      "71": 44,
+      "72": 40,
+      "73": 36,
+      "74": 25,
+      "75": 50,
+      "76": 86,
+      "77": 50,
+      "130": 36,
+      "131": 25,
+      "132": 50,
+      "133": 86,
+      "134": 50
+    }
+  },
+  {
+    "nif": "chestnut",
+    "species": "chestnut",
+    "descriptions": [
+      "Tree - Chestnut",
+      "Tree - Chestnut 2",
+      "Tree - chestnut",
+      "Tree - chestnut 2",
+      "Tree Chestnut"
+    ],
+    "placements": 1226,
+    "zones": {
+      "181": 416,
+      "182": 162,
+      "183": 80,
+      "184": 311,
+      "186": 257
+    }
+  },
+  {
+    "nif": "creepywebpine",
+    "species": "pine",
+    "descriptions": [
+      "Creepy Web Pine"
+    ],
+    "placements": 45,
+    "zones": {
+      "105": 45
+    }
+  },
+  {
+    "nif": "crookedpalm",
+    "species": "palm",
+    "descriptions": [
+      "Tree - Crooked Palm"
+    ],
+    "placements": 444,
+    "zones": {
+      "38": 148,
+      "81": 148,
+      "138": 148
+    }
+  },
+  {
+    "nif": "dtrash01",
+    "species": "ash",
+    "descriptions": [
+      "dtrash01"
+    ],
+    "placements": 1,
+    "zones": {
+      "53": 1
+    }
+  },
+  {
+    "nif": "elm1",
+    "species": "elm",
+    "descriptions": [
+      "Elm",
+      "Elm 1",
+      "Elm1",
+      "Placeholder - Shallow Plant",
+      "Placeholder Tree - Lemon Tree",
+      "Tree - Elm1",
+      "Tree-Elm1"
+    ],
+    "placements": 6807,
+    "zones": {
+      "0": 616,
+      "1": 209,
+      "2": 472,
+      "3": 178,
+      "6": 223,
+      "7": 65,
+      "8": 702,
+      "9": 94,
+      "10": 39,
+      "11": 148,
+      "12": 180,
+      "52": 413,
+      "53": 65,
+      "55": 290,
+      "57": 152,
+      "171": 65,
+      "172": 100,
+      "177": 732,
+      "178": 195,
+      "234": 195,
+      "235": 134,
+      "236": 60,
+      "237": 140,
+      "238": 210,
+      "239": 300,
+      "240": 290,
+      "241": 285,
+      "254": 255
+    }
+  },
+  {
+    "nif": "elm1cl5",
+    "species": "elm",
+    "descriptions": [
+      "cluster - Elm 1 Cluster 5",
+      "tree cluster - elm1"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "elm2",
+    "species": "elm",
+    "descriptions": [
+      "Elm 2",
+      "Elm2",
+      "Tree - Elm2",
+      "Tree-Elm2"
+    ],
+    "placements": 4391,
+    "zones": {
+      "0": 390,
+      "1": 128,
+      "2": 89,
+      "3": 123,
+      "6": 59,
+      "7": 30,
+      "8": 758,
+      "9": 55,
+      "12": 111,
+      "52": 424,
+      "53": 63,
+      "54": 414,
+      "55": 263,
+      "57": 150,
+      "178": 4,
+      "238": 230,
+      "239": 255,
+      "240": 370,
+      "241": 240,
+      "242": 120,
+      "254": 115
+    }
+  },
+  {
+    "nif": "elm2cl5",
+    "species": "elm",
+    "descriptions": [
+      "cluster - Elm 2 Cluster 5"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "firerng1",
+    "species": "fir",
+    "descriptions": [
+      "Kiln Fire Ring"
+    ],
+    "placements": 2,
+    "zones": {
+      "2": 2
+    }
+  },
+  {
+    "nif": "frblghold",
+    "species": "fir",
+    "descriptions": [
+      "Building - firblhold",
+      "frblghold"
+    ],
+    "placements": 3,
+    "zones": {
+      "182": 2,
+      "186": 1
+    }
+  },
+  {
+    "nif": "hashpile",
+    "species": "ash",
+    "descriptions": [
+      "Ash Pile"
+    ],
+    "placements": 1,
+    "zones": {
+      "207": 1
+    }
+  },
+  {
+    "nif": "hbareskny",
+    "species": "unclassified tree",
+    "descriptions": [
+      "Bare Tree"
+    ],
+    "placements": 153,
+    "zones": {
+      "200": 15,
+      "202": 15,
+      "203": 6,
+      "204": 25,
+      "206": 8,
+      "207": 6,
+      "208": 37,
+      "210": 20,
+      "211": 20,
+      "216": 1
+    }
+  },
+  {
+    "nif": "hbirchsingle",
+    "species": "birch",
+    "descriptions": [
+      "Birch Tree Single",
+      "tree - Birch Tree Single"
+    ],
+    "placements": 1401,
+    "zones": {
+      "171": 8,
+      "172": 58,
+      "200": 172,
+      "201": 39,
+      "202": 62,
+      "203": 105,
+      "204": 224,
+      "205": 18,
+      "206": 117,
+      "207": 61,
+      "208": 193,
+      "210": 157,
+      "211": 106,
+      "216": 81
+    }
+  },
+  {
+    "nif": "hbirchsinglecl5",
+    "species": "birch",
+    "descriptions": [
+      "cluster - Hib Birch Single Cluster 5",
+      "tree cluster -  Birch Tree Single"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "hdomtrashedtrees",
+    "species": "ash",
+    "descriptions": [
+      "HDomTrashedTrees.NIF"
+    ],
+    "placements": 2,
+    "zones": {
+      "181": 1,
+      "186": 1
+    }
+  },
+  {
+    "nif": "helm",
+    "species": "elm",
+    "descriptions": [
+      "Elm",
+      "tree - Elm"
+    ],
+    "placements": 3503,
+    "zones": {
+      "171": 41,
+      "172": 11,
+      "200": 324,
+      "201": 340,
+      "202": 244,
+      "203": 212,
+      "204": 379,
+      "205": 114,
+      "206": 199,
+      "207": 326,
+      "208": 389,
+      "210": 259,
+      "211": 411,
+      "216": 254
+    }
+  },
+  {
+    "nif": "helm2",
+    "species": "elm",
+    "descriptions": [
+      "Elm2",
+      "tree - Elm2"
+    ],
+    "placements": 3233,
+    "zones": {
+      "171": 46,
+      "172": 53,
+      "200": 327,
+      "201": 300,
+      "202": 172,
+      "203": 198,
+      "204": 364,
+      "205": 104,
+      "206": 141,
+      "207": 335,
+      "208": 360,
+      "210": 256,
+      "211": 383,
+      "216": 194
+    }
+  },
+  {
+    "nif": "hfirbtree",
+    "species": "fir",
+    "descriptions": [
+      "Firb Tree",
+      "Tree - Firb"
+    ],
+    "placements": 3,
+    "zones": {
+      "201": 1,
+      "204": 2
+    }
+  },
+  {
+    "nif": "hiberniatall_whitepine3cl10",
+    "species": "pine",
+    "descriptions": [
+      "cluster - Hib Tall White Pine 3 Cluster 10",
+      "tree cluster - HiberniaTall_WhitePine",
+      "tree cluster - Hiberniatall_whitePine3",
+      "tree cluster - Tall_WhitePine",
+      "tree cluster - tall_whitePine3"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "hiberniatall_whitepine3cl5",
+    "species": "pine",
+    "descriptions": [
+      "cluster - Hib Tall White Pine 3 Cluster 5"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "hiberniatall_whitepine3cl5row",
+    "species": "pine",
+    "descriptions": [
+      "tree cluster HiberniaTall_WhitePine3CL5Row"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "hiberniatall_whitepinecl10",
+    "species": "pine",
+    "descriptions": [
+      "cluster - Hib Tall White Pine Cluster 10"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "hiberniatall_whitepinecl5",
+    "species": "pine",
+    "descriptions": [
+      "cluster - Hib talll White Pine Cluster 5"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "hlowtree",
+    "species": "unclassified tree",
+    "descriptions": [
+      "Low Tree",
+      "Tree - Low",
+      "tree - Hlowtree",
+      "tree - Low Tree"
+    ],
+    "placements": 2149,
+    "zones": {
+      "171": 120,
+      "172": 276,
+      "182": 1,
+      "200": 66,
+      "201": 47,
+      "202": 60,
+      "203": 66,
+      "204": 104,
+      "206": 68,
+      "207": 52,
+      "208": 153,
+      "210": 125,
+      "211": 215,
+      "216": 48,
+      "234": 96,
+      "235": 84,
+      "236": 80,
+      "237": 57,
+      "239": 165,
+      "240": 65,
+      "241": 75,
+      "242": 56,
+      "254": 70
+    }
+  },
+  {
+    "nif": "hlowtreecl5",
+    "species": "unclassified tree",
+    "descriptions": [
+      "cluster - Hib Low Tree Cluster 5",
+      "tree cluster - Hlowtree"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "hlowtreecluster",
+    "species": "unclassified tree",
+    "descriptions": [
+      "tree cluster - Hlowtree"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "hoaktree",
+    "species": "oak",
+    "descriptions": [
+      "HOak Tree",
+      "HOak tree",
+      "Hoaktree",
+      "tree - HOak tree"
+    ],
+    "placements": 2820,
+    "zones": {
+      "171": 75,
+      "172": 159,
+      "177": 320,
+      "178": 105,
+      "200": 194,
+      "201": 94,
+      "202": 63,
+      "203": 165,
+      "204": 238,
+      "205": 13,
+      "206": 300,
+      "207": 269,
+      "208": 83,
+      "210": 85,
+      "216": 32,
+      "234": 115,
+      "235": 70,
+      "236": 45,
+      "237": 110,
+      "238": 185,
+      "242": 100
+    }
+  },
+  {
+    "nif": "hoaktreecl5",
+    "species": "oak",
+    "descriptions": [
+      "cluster - Hib Oak Tree Cluster 5",
+      "tree cluster - Hoak tree",
+      "tree cluster - oak tree"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "holdgrove",
+    "species": "unclassified tree",
+    "descriptions": [
+      "Grove Tree"
+    ],
+    "placements": 843,
+    "zones": {
+      "200": 130,
+      "201": 68,
+      "204": 295,
+      "207": 41,
+      "208": 309
+    }
+  },
+  {
+    "nif": "hollytree",
+    "species": "holly",
+    "descriptions": [
+      "Holly",
+      "Holly Tree",
+      "tree - hollytree"
+    ],
+    "placements": 1064,
+    "zones": {
+      "52": 94,
+      "53": 338,
+      "54": 231,
+      "55": 148,
+      "177": 125,
+      "178": 128
+    }
+  },
+  {
+    "nif": "hollytreecl5",
+    "species": "holly",
+    "descriptions": [
+      "tree cluster - Holly Tree"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "hweepwill",
+    "species": "willow",
+    "descriptions": [
+      "Tree - Weeping Willow",
+      "Weeping Willow"
+    ],
+    "placements": 245,
+    "zones": {
+      "181": 18,
+      "182": 1,
+      "183": 6,
+      "204": 40,
+      "205": 180
+    }
+  },
+  {
+    "nif": "lavatreeshort",
+    "species": "unclassified tree",
+    "descriptions": [
+      "Lava Tree Short"
+    ],
+    "placements": 8,
+    "zones": {
+      "153": 8
+    }
+  },
+  {
+    "nif": "lavatreetall",
+    "species": "unclassified tree",
+    "descriptions": [
+      "Lava Tree Tall"
+    ],
+    "placements": 19,
+    "zones": {
+      "153": 19
+    }
+  },
+  {
+    "nif": "lemontree",
+    "species": "lemon",
+    "descriptions": [
+      "Lemon Tree",
+      "Placeholder Tree - Lemon Tree"
+    ],
+    "placements": 3,
+    "zones": {
+      "30": 1,
+      "73": 1,
+      "130": 1
+    }
+  },
+  {
+    "nif": "maple",
+    "species": "maple",
+    "descriptions": [
+      "Maple",
+      "Tree Maple",
+      "maple"
+    ],
+    "placements": 1731,
+    "zones": {
+      "151": 215,
+      "153": 37,
+      "154": 689,
+      "155": 415,
+      "156": 31,
+      "158": 344
+    }
+  },
+  {
+    "nif": "midgardtall_whitepine3cl10",
+    "species": "pine",
+    "descriptions": [
+      "tree cluster - MidgardTall_WhitePine3CL10"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "midgardtall_whitepinecl10",
+    "species": "pine",
+    "descriptions": [
+      "tree cluster - MidgardTall_WhitePineCL10"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "mightyoak",
+    "species": "oak",
+    "descriptions": [
+      "Mighty Oak"
+    ],
+    "placements": 1019,
+    "zones": {
+      "53": 1019
+    }
+  },
+  {
+    "nif": "mightyoak-small",
+    "species": "oak",
+    "descriptions": [
+      "Mighty Oak Smaller"
+    ],
+    "placements": 433,
+    "zones": {
+      "53": 433
+    }
+  },
+  {
+    "nif": "n-fdarch",
+    "species": "fir",
+    "descriptions": [
+      "FireDwarfArch"
+    ],
+    "placements": 1,
+    "zones": {
+      "104": 1
+    }
+  },
+  {
+    "nif": "n-fdfurnace",
+    "species": "fir",
+    "descriptions": [
+      "FireDwarfFurnace"
+    ],
+    "placements": 1,
+    "zones": {
+      "104": 1
+    }
+  },
+  {
+    "nif": "n-fdmine",
+    "species": "fir",
+    "descriptions": [
+      "FireDwarfMine"
+    ],
+    "placements": 1,
+    "zones": {
+      "104": 1
+    }
+  },
+  {
+    "nif": "nbirchtree",
+    "species": "birch",
+    "descriptions": [
+      "Birch Tree",
+      "Birch Tree Regular Size",
+      "tree - Birch Tree"
+    ],
+    "placements": 1799,
+    "zones": {
+      "171": 48,
+      "172": 115,
+      "200": 196,
+      "201": 75,
+      "202": 93,
+      "203": 98,
+      "204": 186,
+      "206": 322,
+      "207": 288,
+      "208": 118,
+      "210": 129,
+      "211": 84,
+      "216": 47
+    }
+  },
+  {
+    "nif": "nbirchtreecl5",
+    "species": "birch",
+    "descriptions": [
+      "tree cluster - Birch Tree"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "npinea",
+    "species": "pine",
+    "descriptions": [
+      "Pine #3",
+      "Pine A",
+      "Pine Tree #2",
+      "Pine#3",
+      "tree - NPineA.nif"
+    ],
+    "placements": 1722,
+    "zones": {
+      "101": 197,
+      "102": 87,
+      "103": 325,
+      "105": 656,
+      "107": 170,
+      "108": 64,
+      "167": 203,
+      "168": 20
+    }
+  },
+  {
+    "nif": "npinea-s",
+    "species": "pine",
+    "descriptions": [
+      "NpineA-s.nif",
+      "Pine #3 Snow",
+      "Pine#3 NpineA snow",
+      "Tree NpineA-s.nif",
+      "tree - NPineA-s.nif",
+      "tree- - Pine#3 NpineA snow"
+    ],
+    "placements": 2223,
+    "zones": {
+      "102": 73,
+      "108": 519,
+      "111": 505,
+      "112": 522,
+      "152": 340,
+      "153": 162,
+      "167": 3,
+      "168": 99
+    }
+  },
+  {
+    "nif": "npineacl5",
+    "species": "pine",
+    "descriptions": [
+      "tree cluster - NPineACL5"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "npinedk",
+    "species": "pine",
+    "descriptions": [
+      "Pine Dark",
+      "Pine#2",
+      "Tree NPineDk.nif"
+    ],
+    "placements": 780,
+    "zones": {
+      "105": 399,
+      "107": 156,
+      "108": 156,
+      "152": 69
+    }
+  },
+  {
+    "nif": "npinetree",
+    "species": "pine",
+    "descriptions": [
+      "Pine #2",
+      "Pine PineTree",
+      "Pine Tree #3",
+      "Pine#2",
+      "tree - Npinetree.nif"
+    ],
+    "placements": 907,
+    "zones": {
+      "101": 167,
+      "102": 26,
+      "103": 371,
+      "108": 134,
+      "167": 198,
+      "168": 11
+    }
+  },
+  {
+    "nif": "npinetree-s",
+    "species": "pine",
+    "descriptions": [
+      "NPinetree-s.nif",
+      "Pine #1 Snow",
+      "Pine #1 again",
+      "Pine#1 npintre1 snow",
+      "Tree NPinetree-s.nif",
+      "tree - Pine#1 npintre1 snow",
+      "tree - npintre1-s.nif"
+    ],
+    "placements": 2902,
+    "zones": {
+      "102": 36,
+      "108": 502,
+      "111": 548,
+      "112": 1005,
+      "152": 329,
+      "153": 128,
+      "167": 79,
+      "168": 275
+    }
+  },
+  {
+    "nif": "npinetree-scl5",
+    "species": "pine",
+    "descriptions": [
+      "tree cluster - Npinetree-sCL5",
+      "tree cluster - Npinetree-sCL5 2"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "npinetreecl5",
+    "species": "pine",
+    "descriptions": [
+      "tree cluster - NpinetreeCL5"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "npintre-s",
+    "species": "pine",
+    "descriptions": [
+      "Pine NPinTre snow BIG",
+      "tree - Pine NPinTre snow BIG"
+    ],
+    "placements": 1401,
+    "zones": {
+      "111": 467,
+      "112": 587,
+      "167": 87,
+      "168": 260
+    }
+  },
+  {
+    "nif": "npintre1",
+    "species": "pine",
+    "descriptions": [
+      "Norse Pine Tree",
+      "Pine",
+      "Pine #1",
+      "Pine Tree #1",
+      "Pine#1",
+      "tree - npintre1.nif"
+    ],
+    "placements": 2620,
+    "zones": {
+      "100": 554,
+      "101": 250,
+      "102": 540,
+      "103": 412,
+      "105": 457,
+      "107": 194,
+      "167": 213
+    }
+  },
+  {
+    "nif": "npintre1-scl5",
+    "species": "pine",
+    "descriptions": [
+      "tree cluster - Npintre1-sCL5",
+      "tree cluster - npintre1-sCL5 2"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "npintre1cl5",
+    "species": "pine",
+    "descriptions": [
+      "tree cluster - npintre1CL5"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "npintree",
+    "species": "pine",
+    "descriptions": [
+      "Pine #2"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "nrdmkhagmul",
+    "species": "elm",
+    "descriptions": [
+      "HaggerfelMul"
+    ],
+    "placements": 1,
+    "zones": {
+      "100": 1
+    }
+  },
+  {
+    "nif": "nvrgrn1-s",
+    "species": "pine",
+    "descriptions": [
+      "Small Evergreen snow",
+      "Tree NPinTre-s.nif",
+      "tree - vrgrn1-s.nif"
+    ],
+    "placements": 845,
+    "zones": {
+      "108": 8,
+      "111": 64,
+      "112": 145,
+      "152": 503,
+      "167": 43,
+      "168": 82
+    }
+  },
+  {
+    "nif": "nvrgrn1-scl5",
+    "species": "pine",
+    "descriptions": [
+      "tree cluster - Nvrgrn1-sCL5"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "oak1",
+    "species": "oak",
+    "descriptions": [
+      "Oak",
+      "Oak 1",
+      "Oak1",
+      "oak1.nif"
+    ],
+    "placements": 2063,
+    "zones": {
+      "0": 8,
+      "2": 208,
+      "3": 90,
+      "6": 8,
+      "7": 62,
+      "8": 258,
+      "9": 25,
+      "11": 62,
+      "12": 176,
+      "52": 164,
+      "54": 304,
+      "55": 236,
+      "56": 380,
+      "107": 82
+    }
+  },
+  {
+    "nif": "olivetree",
+    "species": "olive",
+    "descriptions": [
+      "Tree - Oceanus 2",
+      "Tree - Oceanus 2 Olive",
+      "Tree - Oceanus 2 Olivetree",
+      "tree_oceanus_02 olivetree"
+    ],
+    "placements": 862,
+    "zones": {
+      "30": 38,
+      "31": 14,
+      "32": 40,
+      "33": 110,
+      "34": 52,
+      "70": 41,
+      "71": 26,
+      "72": 33,
+      "73": 38,
+      "74": 14,
+      "75": 40,
+      "76": 110,
+      "77": 52,
+      "130": 38,
+      "131": 14,
+      "132": 40,
+      "133": 110,
+      "134": 52
+    }
+  },
+  {
+    "nif": "pinetree",
+    "species": "pine",
+    "descriptions": [
+      "Pine"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "pintre1",
+    "species": "pine",
+    "descriptions": [
+      "B-Pine",
+      "B-Pine -SMALL",
+      "Pine",
+      "Tree - Pintre1",
+      "Tree-Pintre1"
+    ],
+    "placements": 1952,
+    "zones": {
+      "2": 133,
+      "3": 69,
+      "6": 489,
+      "7": 89,
+      "8": 455,
+      "9": 154,
+      "10": 54,
+      "11": 370,
+      "177": 90,
+      "178": 49
+    }
+  },
+  {
+    "nif": "pintre1cl3",
+    "species": "pine",
+    "descriptions": [
+      "tree cluster - pintre1"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "skinnypalm",
+    "species": "palm",
+    "descriptions": [
+      "Tree - SkinnyPalm"
+    ],
+    "placements": 510,
+    "zones": {
+      "38": 170,
+      "81": 170,
+      "138": 170
+    }
+  },
+  {
+    "nif": "smallpalm",
+    "species": "palm",
+    "descriptions": [
+      "Tree - Small Palm"
+    ],
+    "placements": 393,
+    "zones": {
+      "38": 131,
+      "81": 131,
+      "138": 131
+    }
+  },
+  {
+    "nif": "spruce",
+    "species": "spruce",
+    "descriptions": [
+      "Tree Spruce"
+    ],
+    "placements": 399,
+    "zones": {
+      "155": 399
+    }
+  },
+  {
+    "nif": "stmaufire",
+    "species": "fir",
+    "descriptions": [
+      "Mau - Fire"
+    ],
+    "placements": 27,
+    "zones": {
+      "38": 9,
+      "81": 9,
+      "138": 9
+    }
+  },
+  {
+    "nif": "stonepine",
+    "species": "pine",
+    "descriptions": [
+      "Tree Stone Pine",
+      "Tree Stonepine"
+    ],
+    "placements": 545,
+    "zones": {
+      "151": 450,
+      "153": 95
+    }
+  },
+  {
+    "nif": "tall_whitepine",
+    "species": "pine",
+    "descriptions": [
+      "tree - Tall_WhitePine",
+      "tree - Tall_WhitePine.nif"
+    ],
+    "placements": 99,
+    "zones": {
+      "171": 30,
+      "172": 61,
+      "235": 8
+    }
+  },
+  {
+    "nif": "tall_whitepine2_snow",
+    "species": "pine",
+    "descriptions": [],
+    "placements": 190,
+    "zones": {
+      "168": 190
+    }
+  },
+  {
+    "nif": "tall_whitepine3",
+    "species": "pine",
+    "descriptions": [
+      "tree - Tall_WhitePine3",
+      "tree - Tall_WhitePine3.nif"
+    ],
+    "placements": 1615,
+    "zones": {
+      "171": 396,
+      "172": 599,
+      "235": 270,
+      "236": 350
+    }
+  },
+  {
+    "nif": "talloak1",
+    "species": "oak",
+    "descriptions": [
+      "Tall Oak 1"
+    ],
+    "placements": 205,
+    "zones": {
+      "8": 205
+    }
+  },
+  {
+    "nif": "valcampfire",
+    "species": "fir",
+    "descriptions": [
+      "valcampfire"
+    ],
+    "placements": 39,
+    "zones": {
+      "151": 18,
+      "152": 5,
+      "154": 3,
+      "155": 12,
+      "158": 1
+    }
+  },
+  {
+    "nif": "vrgrn1",
+    "species": "pine",
+    "descriptions": [
+      "Evergreen 1",
+      "SM evergreen",
+      "Small Evergreen",
+      "Vrgrn1",
+      "tree - vrgrn1"
+    ],
+    "placements": 904,
+    "zones": {
+      "100": 225,
+      "101": 69,
+      "102": 116,
+      "103": 18,
+      "105": 250,
+      "107": 30,
+      "108": 18,
+      "167": 114,
+      "168": 23,
+      "186": 41
+    }
+  },
+  {
+    "nif": "vrgrn1cl5",
+    "species": "pine",
+    "descriptions": [
+      "tree cluster - vrgrn1CL5"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "willowcl3",
+    "species": "willow",
+    "descriptions": [
+      "tree cluster - willow 3"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "willowcl5",
+    "species": "willow",
+    "descriptions": [
+      "tree cluster - willow",
+      "tree cluster - willow 5"
+    ],
+    "placements": 0,
+    "zones": {}
+  },
+  {
+    "nif": "yew",
+    "species": "yew",
+    "descriptions": [
+      "Tree - Yew 2",
+      "Tree - yew",
+      "Tree - yew 2",
+      "Tree - yew 3",
+      "Tree yew"
+    ],
+    "placements": 1108,
+    "zones": {
+      "181": 260,
+      "182": 185,
+      "183": 131,
+      "184": 313,
+      "186": 219
+    }
+  }
+]
