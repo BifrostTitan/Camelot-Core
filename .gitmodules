@@ -3,4 +3,4 @@
 	url = https://github.com/BifrostTitan/DAoC-Client-Lib.git
 [submodule "ThirdParty/daoc-niflib"]
 	path = ThirdParty/daoc-niflib
-	url = https://github.com/BifrostTitan/daoc-niflib.git
+	url = https://github.com/BifrostTitan/DAoC-Niflib.git

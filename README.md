@@ -37,7 +37,7 @@ The module is `CamelotCore` and its export macro is `CAMELOTCORE_API`. Existing 
 | Dependency | Source | Purpose |
 | --- | --- | --- |
 | DAoC Client Library | [BifrostTitan/DAoC-Client-Lib](https://github.com/BifrostTitan/DAoC-Client-Lib) | Native client-data readers, archive decoding, zone geometry and asset preparation |
-| DAoC Niflib | [BifrostTitan/daoc-niflib](https://github.com/BifrostTitan/daoc-niflib) | NIF parsing, geometry, skinning and animation data used by asset preparation |
+| DAoC Niflib | [BifrostTitan/DAoC-Niflib](https://github.com/BifrostTitan/DAoC-Niflib) | NIF parsing, geometry, skinning and animation data used by asset preparation |
 
 Both repositories are required, pinned Git submodules under `ThirdParty`. Unreal build setup rejects missing source dependencies with the initialization command. GitHub source ZIP downloads do not include submodule contents; use a recursive clone or supply the pinned dependency checkouts separately. Preserve upstream attribution and licenses.
 
