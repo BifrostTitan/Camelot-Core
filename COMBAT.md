@@ -20,6 +20,8 @@ Built-in controls provide targeting, attack toggle, and eight slots per bar with
 
 Resources are server percentages, not inferred absolute totals. Effects remain until server updates remove them. Attack/death/revive follows confirmation. Cooldown/cast clocks support display and request gating, not gameplay simulation. Entity removal and disconnect clear stale state.
 
+Spell-effect opcode `0x1b` accepts the ten-byte Catacombs payload and the legacy payload with two reserved trailing bytes. During active gameplay, malformed complete payloads are rejected without replacing confirmed combat or inventory state. Incomplete skill catalogs discard their pending assembly while retaining the last confirmed catalog. See [NETWORK.md](NETWORK.md) for diagnostics and terminal transport errors.
+
 Hybrid ability indexes are relative to the first non-specialization at the request boundary. List-spell requests use required level and line index; cooldown identity additionally uses spell position. Icons, database IDs, and animation IDs are distinct. Multi-page catalogs commit only when complete; replacements rebuild session-local bindings.
 
 Requests preserve feet position, heading, and visibility flags. Visibility uses scene collision; unknown entities are blocked. Melee events do not supply absolute damage, so UI must not invent damage numbers from health percentages.

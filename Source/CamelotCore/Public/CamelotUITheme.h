@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 #include "Engine/DataAsset.h"
+#include "DaocCombatTypes.h"
 #include "CamelotUITheme.generated.h"
 class UTexture2D;
 
@@ -57,6 +58,16 @@ class CAMELOTCORE_API UCamelotUITheme : public UDataAsset
     /// Explicit project-owned textures; no icon-ID guesses or fabricated abilities.
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Icons")
     TMap<int32, TSoftObjectPtr<UTexture2D>> AbilityIcons;
+    /// Styles and skills have separate classic icon namespaces and may share numeric IDs with spells.
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Icons")
+    TMap<int32, TSoftObjectPtr<UTexture2D>> StyleIcons;
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Icons")
+    TMap<int32, TSoftObjectPtr<UTexture2D>> SkillIcons;
+    /// Optional host artwork for catalog entries without an available icon.
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Icons")
+    TSoftObjectPtr<UTexture2D> MissingAbilityIcon;
+    /// Resolves an explicit mapping before loading the host's missing-art fallback.
+    UTexture2D *LoadAbilityIcon(const FDaocCombatAbility &Ability) const;
     /// Inventory packets supply model IDs, not a universal icon index. Hosts provide the artwork.
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Icons")
     TMap<int32, TSoftObjectPtr<UTexture2D>> ItemIcons;

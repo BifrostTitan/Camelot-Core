@@ -13,6 +13,14 @@
 namespace camelot
 {
 using Bytes = std::vector<uint8_t>;
+/// Recoverable rejection of a complete packet; excludes payloads and player identities.
+struct PacketDiagnostic
+{
+    uint8_t opcode = 0;
+    size_t payloadBytes = 0;
+    uint32_t occurrences = 0;
+    std::string reason;
+};
 /// Protocol session phase, including deferred world readiness and terminal failure.
 enum class State
 {
@@ -162,6 +170,10 @@ class Client
     void Disconnect();
     /// Records a terminal session error and clears pending gameplay operations.
     void Fail(const std::string &message);
+    /// Rejects a complete gameplay payload without disconnecting; handshake errors remain terminal.
+    void RejectPacket(uint8_t opcode, size_t payloadBytes, const std::string &reason);
+    /// Drains bounded, coalesced packet diagnostics for logging by the transport owner.
+    std::vector<PacketDiagnostic> TakePacketDiagnostics();
     /// Queues position, heading, speed and visibility in classic server units.
     bool Move(uint32_t x, uint32_t y, uint16_t z, uint16_t heading, uint16_t speed = 0, bool targetVisible = false, bool groundVisible = false, bool flying = false);
     /// Queues printable command text through the existing classic command packet.
@@ -322,6 +334,7 @@ class Client
     void ResetInventory();
     std::vector<Skill> pendingSkills_;
     std::vector<CombatEvent> combatEvents_;
+    std::vector<PacketDiagnostic> packetDiagnostics_;
     bool receivingSkills_ = false;
     std::map<uint8_t, SpellLine> previousSpellLines_;
     std::map<uint16_t, double> previousSpellCooldowns_;

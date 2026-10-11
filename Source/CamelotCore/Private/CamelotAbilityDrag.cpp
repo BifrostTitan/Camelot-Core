@@ -38,8 +38,7 @@ void SCamelotAbilityIcon::Construct(const FArguments &Args)
     const auto *Theme = Args._Theme ? Args._Theme : GetDefault<UCamelotUITheme>();
     Brush = *FCoreStyle::Get().GetBrush("WhiteBrush");
     Brush.ImageSize = FVector2D(36, 36);
-    if (const auto *Asset = Theme->AbilityIcons.Find(Ability.Icon))
-        Texture.Reset(Asset->LoadSynchronous());
+    Texture.Reset(Theme->LoadAbilityIcon(Ability));
     if (Texture.IsValid())
     {
         Brush.SetResourceObject(Texture.Get());

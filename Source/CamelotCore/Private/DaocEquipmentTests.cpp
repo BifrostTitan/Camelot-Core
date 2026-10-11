@@ -29,7 +29,7 @@ bool FDaocEquipmentTest::RunTest(const FString &)
     Body->RegisterComponent();
     auto *Renderer = NewObject<UDaocEquipmentComponent>(Owner);
     Renderer->RegisterComponent();
-    for (int32 Model : {14, 479})
+    for (int32 Model : {14, 479, 716})
     {
         auto *Mesh = LoadObject<USkeletalMesh>(nullptr, *FString::Printf(TEXT("/Game/DAoC/Characters/SK_daoc_%d.SK_daoc_%d"), Model, Model));
         if (!TestNotNull(TEXT("Prepared player body"), Mesh))
@@ -128,6 +128,16 @@ bool FDaocEquipmentTest::RunTest(const FString &)
             for (int32 I = 0; I < Figure->BaseSectionParts.Num(); ++I)
                 if (Figure->BaseSectionParts[I] == 1 || Figure->BaseSectionParts[I] == 3 || Figure->BaseSectionParts[I] == 5)
                     TestFalse(TEXT("Robe replaces torso and suppresses sleeves/legs"), Body->IsMaterialSectionShown(I, 0));
+        Equip(27, 140);
+        Equip(28, 141);
+        Renderer->ApplyAppearance(Body, Catalog, A);
+        Children.Reset();
+        Body->GetChildrenComponents(false, Children);
+        for (int32 Part : {3, 5})
+            TestTrue(TEXT("Explicit leggings and sleeves override robe suppression"), Children.ContainsByPredicate([&](auto *Child) {
+                auto *Armor = Cast<USkeletalMeshComponent>(Child);
+                return Armor && Armor->GetSkeletalMeshAsset() && Armor->GetSkeletalMeshAsset()->GetName().Contains(FString::Printf(TEXT("_p%d_"), Part));
+            }));
         A.bHoodUp = true;
         Renderer->ApplyAppearance(Body, Catalog, A);
         if (Figure)
@@ -140,6 +150,27 @@ bool FDaocEquipmentTest::RunTest(const FString &)
         Children.Reset();
         Body->GetChildrenComponents(false, Children);
         TestTrue(TEXT("Catacombs helmet uses its dedicated fitted socket"), Children.ContainsByPredicate([](auto *C) { return Cast<UStaticMeshComponent>(C) && C->GetAttachSocketName() == TEXT("Bip01 Helmet"); }));
+        if (Model == 14)
+        {
+            auto *HelmetCatalog = DuplicateObject<UDaocEquipmentCatalog>(Catalog, GetTransientPackage());
+            const auto HasHair = [&]() {
+                TArray<USceneComponent *> Attached;
+                Body->GetChildrenComponents(false, Attached);
+                return Attached.ContainsByPredicate([](auto *Child) {
+                    auto *Hair = Cast<USkeletalMeshComponent>(Child);
+                    return Hair && Hair->GetSkeletalMeshAsset() && Hair->GetSkeletalMeshAsset()->GetPathName().StartsWith(TEXT("/Game/DAoC/Customization/"));
+                });
+            };
+            for (bool HideHair : {true, false})
+            {
+                for (auto &Item : HelmetCatalog->Items)
+                    if (Item.Model == 2251)
+                        Item.bHideHair = HideHair;
+                Renderer->ClearEquipment();
+                Renderer->ApplyAppearance(Body, HelmetCatalog, A);
+                TestEqual(TEXT("Helmet coverage controls hair independently of its mesh"), HasHair(), !HideHair);
+            }
+        }
         A.Equipment.Reset();
         Equip(25, 46);
         Equip(12, 4);

@@ -118,7 +118,7 @@ int main()
         remote[27] = 'X';
         auto malformed = c;
         feed(malformed, 0x4b, remote);
-        check(malformed.GetState() == State::Failed && malformed.Players().empty(), "short modern guild packet rejects unsafe world state");
+        check(malformed.GetState() == State::Playing && malformed.Players().at(45).name == "R" && malformed.Players().at(45).guildName == "Test" && !malformed.TakePacketDiagnostics().empty(), "short modern guild packet preserves the last validated world snapshot");
         c.TakeCombatEvents();
         check(c.SelectTarget(43, true) && c.SetAttack(true), "NPC combat request");
         feed(c, 0x74, {1, 0, 0, 0});

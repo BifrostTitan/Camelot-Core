@@ -24,6 +24,9 @@ class CAMELOTCORE_API ADaocCombatHUD : public AHUD
     virtual void NotifyHitBoxClick(FName BoxName) override;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camelot|UI")
     TObjectPtr<class UCamelotUITheme> UITheme;
+    /// Optional project-owned theme loaded once when gameplay begins.
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Config, Category = "Camelot|UI")
+    TSoftObjectPtr<class UCamelotUITheme> DefaultUITheme;
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Config, Category = "Camelot|UI", meta = (ClampMin = "0.5", ClampMax = "1.5"))
     float UIScale = .75f;
     /// Text-only labels match the classic presentation. Target health remains in

@@ -425,6 +425,8 @@ class CAMELOTCORE_API UDaocNetworkSubsystem : public UGameInstanceSubsystem, pub
     void ClearPlayers();
     uint64 CombatSessionGeneration = 0;
     FCamelotConnection *Connection = nullptr;
+    TMap<uint8, double> PacketDiagnosticTimes;
+    TMap<uint8, uint64> PacketDiagnosticCounts;
     int32 NetworkZoneId = 0;
     float UnitsPerServerUnit = 100.f * 255.f / 65536.f;
     UPROPERTY(Transient)

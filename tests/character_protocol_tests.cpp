@@ -115,7 +115,7 @@ int main()
         truncatedGuild[23] = 'X';
         auto malformed = c;
         feed(malformed, 0xd4, truncatedGuild);
-        check(malformed.GetState() == State::Failed && malformed.Players().empty(), "truncated guild rejects the packet and clears unsafe world state");
+        check(malformed.GetState() == State::Playing && malformed.Players().at(9).guildName == "Test" && malformed.Players().at(9).name == c.Players().at(9).name && !malformed.TakePacketDiagnostics().empty(), "truncated guild preserves the last complete identity and reports rejection");
         check(c.Players().at(9).appearance.equipment.size() == 1 && c.Players().at(9).appearance.equipment[0].model == 4, "early equipment cached for object creation");
         feed(c, 0x15, {0, 9, 0, 0xff, 0});
         check(c.Players().at(9).appearance.equipment.empty(), "remote unequip snapshot clears previous items");
@@ -153,7 +153,7 @@ int main()
         feed(c, 0xa2, {0, 8});
         check(c.Players().count(8) == 0, "NPC deletion");
         feed(c, 0x15, {0, 7, 0, 0, 1, 21, 0x80, 1, 0});
-        check(c.GetState() == State::Failed, "truncated variable item rejected");
+        check(c.GetState() == State::Playing && c.Players().at(7).appearance.equipment.empty() && !c.TakePacketDiagnostics().empty(), "truncated variable item preserves confirmed appearance");
         Client packed(s);
         login(packed);
         auto packedOverview = overview();

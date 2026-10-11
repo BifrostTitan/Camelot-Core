@@ -174,7 +174,13 @@ bool Client::CancelEffect(uint16_t id)
 bool Client::HandleCombat(uint8_t op, const Bytes &b, double now)
 {
     const auto bad = [&]() {
-        Fail("Malformed combat packet " + std::to_string(op));
+        // An incomplete catalog invalidates its assembly, not the last confirmed skills.
+        if (op == 0x16)
+        {
+            pendingSkills_.clear();
+            receivingSkills_ = false;
+        }
+        RejectPacket(op, b.size(), "Malformed combat payload");
         return true;
     };
     CombatEvent e;
@@ -435,7 +441,8 @@ bool Client::HandleCombat(uint8_t op, const Bytes &b, double now)
             combat_.castUntil = 0;
         break;
     case 0x1b:
-        if (b.size() < 12)
+        // PacketLib174 omits PacketLib168's two trailing reserved bytes.
+        if (b.size() < 10)
             return bad();
         e.type = CombatEventType::SpellEffect;
         e.source = Word(b, 0);

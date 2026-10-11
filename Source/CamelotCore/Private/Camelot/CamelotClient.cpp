@@ -119,8 +119,34 @@ void Client::Fail(const std::string &m)
     previousSpellCooldowns_.clear();
     objectId_ = 0;
 }
+void Client::RejectPacket(uint8_t opcode, size_t payloadBytes, const std::string &reason)
+{
+    if (state_ != State::Playing)
+    {
+        Fail(reason + " (opcode " + std::to_string(opcode) + ")");
+        return;
+    }
+    for (auto &entry : packetDiagnostics_)
+        if (entry.opcode == opcode)
+        {
+            entry.payloadBytes = payloadBytes;
+            entry.reason = reason;
+            if (entry.occurrences < UINT32_MAX)
+                ++entry.occurrences;
+            return;
+        }
+    if (packetDiagnostics_.size() < 32)
+        packetDiagnostics_.push_back({opcode, payloadBytes, 1, reason});
+}
+std::vector<PacketDiagnostic> Client::TakePacketDiagnostics()
+{
+    std::vector<PacketDiagnostic> result;
+    result.swap(packetDiagnostics_);
+    return result;
+}
 void Client::Disconnect()
 {
+    packetDiagnostics_.clear();
     weather_ = {};
     debugEnabled_ = false;
     charactersReady_ = false;
@@ -243,7 +269,7 @@ void Client::Handle(uint8_t op, const Bytes &b, double now)
     const auto need = [&](size_t n) {
         if (b.size() < n)
         {
-            Fail("Truncated server packet " + std::to_string(op));
+            RejectPacket(op, b.size(), "Truncated server payload");
             return false;
         }
         return true;

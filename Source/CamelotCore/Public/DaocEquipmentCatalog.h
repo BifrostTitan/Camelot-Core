@@ -77,6 +77,9 @@ struct FDaocEquipmentItem
     TArray<TSoftObjectPtr<UTexture2D>> PartTextures;
     UPROPERTY(EditAnywhere, BlueprintReadOnly)
     TSoftObjectPtr<UStaticMesh> Mesh;
+    /// Closed helmets suppress hair; open caps and circlets retain the selected hairstyle.
+    UPROPERTY(EditAnywhere, BlueprintReadOnly)
+    bool bHideHair = true;
     UPROPERTY(EditAnywhere, BlueprintReadOnly)
     bool bShield = false;
 };

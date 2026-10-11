@@ -46,6 +46,12 @@ bool ADaocCombatHUD::IsGameUIVisible() const
 void ADaocCombatHUD::BeginPlay()
 {
     Super::BeginPlay();
+    if (!UITheme && !DefaultUITheme.IsNull())
+    {
+        UITheme = DefaultUITheme.LoadSynchronous();
+        if (!UITheme)
+            UE_LOG(LogTemp, Warning, TEXT("Camelot: could not load configured gameplay UI theme"));
+    }
     if (PlayerOwner)
     {
         EnableInput(PlayerOwner);

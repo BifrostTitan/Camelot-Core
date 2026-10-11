@@ -279,12 +279,11 @@ void SCamelotGameHUD::Refresh()
     for (int32 I = 0; I < 24; ++I)
     {
         const auto A = Combat && Combat->Hotbar.IsValidIndex(I) ? Combat->Hotbar[I] : FDaocCombatAbility();
-        if (A.Icon != Abilities[I].Icon || A.Name != Abilities[I].Name)
+        if (A.Icon != Abilities[I].Icon || A.Name != Abilities[I].Name || A.Kind != Abilities[I].Kind)
         {
             Icons[I].SetResourceObject(nullptr);
             if (!A.Name.IsEmpty())
-                if (const auto *Asset = Theme->AbilityIcons.Find(A.Icon))
-                    Icons[I].SetResourceObject(Asset->LoadSynchronous());
+                Icons[I].SetResourceObject(Theme->LoadAbilityIcon(A));
             if (Owner.IsValid())
                 Owner->RetainHotbarIcon(I, Cast<UTexture2D>(Icons[I].GetResourceObject()));
             Icons[I].DrawAs = ESlateBrushDrawType::Image;

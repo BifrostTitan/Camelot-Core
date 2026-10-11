@@ -1,11 +1,14 @@
 #if WITH_DEV_AUTOMATION_TESTS
 #include "CamelotUIPolicy.h"
+#include "CamelotUITheme.h"
 #include "DaocCombatComponent.h"
 #include "DaocNetworkSubsystem.h"
 #include "Engine/GameInstance.h"
+#include "Engine/Texture2D.h"
 #include "Misc/AutomationTest.h"
 
 #if WITH_EDITOR
+#include "CamelotAbilityDrag.h"
 #include "CamelotCharacterMenu.h"
 #include "CamelotGameHUD.h"
 #include "CamelotTrainerWindow.h"
@@ -23,6 +26,7 @@
 #include "Misc/Paths.h"
 #include "RenderingThread.h"
 #include "Slate/WidgetRenderer.h"
+#include "TextureCompiler.h"
 #include "Styling/CoreStyle.h"
 #include "Widgets/Layout/SBorder.h"
 #include "Widgets/Layout/SWidgetSwitcher.h"
@@ -31,6 +35,33 @@
 #include "Widgets/Views/SListView.h"
 
 #endif
+
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCamelotAbilityIconTest, "Camelot.UI.AbilityIconNamespaces", EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
+bool FCamelotAbilityIconTest::RunTest(const FString &)
+{
+    auto *Theme = NewObject<UCamelotUITheme>();
+    auto *Spell = NewObject<UTexture2D>(Theme, TEXT("Spell"));
+    auto *Style = NewObject<UTexture2D>(Theme, TEXT("Style"));
+    auto *Skill = NewObject<UTexture2D>(Theme, TEXT("Skill"));
+    auto *Missing = NewObject<UTexture2D>(Theme, TEXT("Missing"));
+    Theme->AbilityIcons.Add(7, Spell);
+    Theme->StyleIcons.Add(7, Style);
+    Theme->SkillIcons.Add(7, Skill);
+    Theme->MissingAbilityIcon = Missing;
+    FDaocCombatAbility Ability;
+    Ability.Icon = 7;
+    Ability.Kind = EDaocAbilityKind::ListSpell;
+    TestTrue(TEXT("Spell namespace resolves server ID"), Theme->LoadAbilityIcon(Ability) == Spell);
+    Ability.Kind = EDaocAbilityKind::Style;
+    TestTrue(TEXT("Equal style ID resolves distinct artwork"), Theme->LoadAbilityIcon(Ability) == Style);
+    Ability.Kind = EDaocAbilityKind::Ability;
+    TestTrue(TEXT("Equal skill ID resolves distinct artwork"), Theme->LoadAbilityIcon(Ability) == Skill);
+    Ability.Icon = 8;
+    TestTrue(TEXT("Unavailable artwork uses the host fallback"), Theme->LoadAbilityIcon(Ability) == Missing);
+    Theme->AbilityIcons.Add(8, Spell);
+    TestTrue(TEXT("Existing shared icon themes remain supported"), Theme->LoadAbilityIcon(Ability) == Spell);
+    return true;
+}
 
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FCamelotUIPolicyTest, "Camelot.UI.ChatAndNameplatePolicy", EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
 bool FCamelotUIPolicyTest::RunTest(const FString &)
@@ -150,6 +181,11 @@ bool FCamelotHUDZoneTravelTest::RunTest(const FString &)
     Spawn.Owner = PC;
     auto *HUD = World->SpawnActor<ADaocCombatHUD>(Spawn);
     HUD->PostInitializeComponents();
+    if (!HUD->DefaultUITheme.IsNull())
+    {
+        HUD->UITheme = HUD->DefaultUITheme.LoadSynchronous();
+        TestNotNull(TEXT("Configured host icon theme loads"), HUD->UITheme.Get());
+    }
     HUD->Canvas = NewObject<UCanvas>();
     HUD->Canvas->Init(1280, 720, nullptr, nullptr);
     FDaocCombatTarget Target;
@@ -256,6 +292,43 @@ bool FCamelotUIRenderTest::RunTest(const FString &)
     auto *HUD = World->SpawnActor<ADaocCombatHUD>(Spawn);
     HUD->PostInitializeComponents();
     TestTrue(TEXT("Expanded UI resolves the test pawn's combat component"), HUD->GetCombat() == Combat);
+    if (!HUD->DefaultUITheme.IsNull())
+    {
+        HUD->UITheme = HUD->DefaultUITheme.LoadSynchronous();
+        TestNotNull(TEXT("Gameplay theme is available to rendered panels"), HUD->UITheme.Get());
+        // Artwork is supplied by hosts; generic UI tests must allow themes without icons.
+        if (HUD->UITheme && FParse::Param(FCommandLine::Get(), TEXT("CamelotIconReview")))
+        {
+            FDaocCombatAbility SpellIcon, StyleIcon, SkillIcon;
+            SpellIcon.Kind = EDaocAbilityKind::ListSpell;
+            SpellIcon.Icon = 5311;
+            StyleIcon.Kind = EDaocAbilityKind::Style;
+            StyleIcon.Icon = 239;
+            SkillIcon.Kind = EDaocAbilityKind::Ability;
+            SkillIcon.Icon = 7;
+            TArray<UTexture *> Textures;
+            for (const auto &Ability : {SpellIcon, StyleIcon, SkillIcon})
+                if (auto *Texture = HUD->UITheme->LoadAbilityIcon(Ability))
+                {
+                    Textures.Add(Texture);
+                    TestFalse(TEXT("Slate artwork is not a virtual texture"), Texture->VirtualTextureStreaming != 0);
+                }
+                else
+                    AddError(TEXT("Host catalog artwork did not resolve"));
+            FTextureCompilingManager::Get().FinishCompilation(Textures);
+            FlushRenderingCommands();
+            for (auto *Texture : Textures)
+                TestNotNull(TEXT("Icon texture has a rendering resource"), Texture->GetResource());
+            auto Icons = SNew(SHorizontalBox) + SHorizontalBox::Slot().AutoWidth()[SNew(SCamelotAbilityIcon).Ability(SpellIcon).Theme(HUD->UITheme)] + SHorizontalBox::Slot().AutoWidth()[SNew(SCamelotAbilityIcon).Ability(StyleIcon).Theme(HUD->UITheme)] + SHorizontalBox::Slot().AutoWidth()[SNew(SCamelotAbilityIcon).Ability(SkillIcon).Theme(HUD->UITheme)];
+            Icons->SlatePrepass(1.f);
+            TestTrue(TEXT("Icon row has its expected layout extent"), Icons->GetDesiredSize().Equals(FVector2D(108, 36)));
+            const auto IconPixels = Render(Icons, FVector2D(108, 36), FLinearColor(.11f, .15f, .18f, 1), TEXT("ability-icons.png"));
+            TSet<uint32> Colors;
+            for (const auto &Pixel : IconPixels)
+                Colors.Add(Pixel.ToPackedARGB());
+            TestTrue(TEXT("Imported ability widgets render artwork rather than solid placeholders"), Colors.Num() > 16);
+        }
+    }
     TestEqual(TEXT("Expanded UI fixture has three visible bars"), HUD->GetCombat()->VisibleHotbarCount, 3);
     auto Pages = SNew(SCamelotCharacterMenu);
     Pages->SelectPage(1);

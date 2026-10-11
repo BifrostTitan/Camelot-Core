@@ -160,13 +160,13 @@ int main()
             check(other.Inventory().revision != c.Inventory().revision, "new session cannot reuse drag revision");
             playing(c, version);
             feed(c, 2, {1, 0, 0, 0, 40, 1});
-            check(c.GetState() == State::Failed && c.Inventory().items.empty(), "truncated item fails safely");
+            check(c.GetState() == State::Playing && c.Inventory().items.empty() && !c.TakePacketDiagnostics().empty(), "truncated item rejected without disconnect");
             playing(c, version);
             Bytes malformed{1, 0, 0, 0};
             item(malformed, version, 40, 4, "Sword");
             malformed.pop_back();
             feed(c, 2, malformed);
-            check(c.GetState() == State::Failed, "truncated name rejected");
+            check(c.GetState() == State::Playing && !c.TakePacketDiagnostics().empty(), "truncated name rejected without disconnect");
         }
         std::cout << "Inventory protocol tests passed\n";
         return 0;

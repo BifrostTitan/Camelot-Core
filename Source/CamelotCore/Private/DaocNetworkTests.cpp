@@ -220,6 +220,24 @@ bool FDaocNetworkTest::RunTest(const FString &Parameters)
     TestEqual(TEXT("Handshake reached Playing"), Component->ConnectionState, FString(TEXT("Playing")));
     TestEqual(TEXT("Server assigned object ID"), Component->PlayerObjectId, 7);
     TestEqual(TEXT("One dummy player"), Component->ReplicatedPlayerCount, 1);
+    if (Peer && Component->ConnectionState == TEXT("Playing"))
+    {
+        // Catacombs sends ten bytes for spell effects; malformed neighboring payloads
+        // must not disconnect or discard the following authoritative resource update.
+        const TArray<uint8> CombatFrames = {0, 10, 0x1b, 0, 7, 0, 0, 0, 7, 0, 0, 1, 1, 0, 1, 0x1b, 0, 0, 8, 0xad, 90, 70, 0, 0, 0, 60, 80, 0};
+        int32 CombatSent = 0;
+        TestTrue(TEXT("Spell effect and malformed-payload fixture sent"), Peer->Send(CombatFrames.GetData(), CombatFrames.Num(), CombatSent) && CombatSent == CombatFrames.Num());
+        const double CombatDeadline = FPlatformTime::Seconds() + 2;
+        do
+        {
+            Component->Tick(.001f);
+            FPlatformProcess::Sleep(.001f);
+        } while (Component->GetCombatState().HealthPercent != 90 && Component->ConnectionState == TEXT("Playing") && FPlatformTime::Seconds() < CombatDeadline);
+        TestEqual(TEXT("Recoverable spell errors preserve the active session"), Component->ConnectionState, FString(TEXT("Playing")));
+        TestEqual(TEXT("Resource update after malformed spell is consumed"), Component->GetCombatState().HealthPercent, 90);
+        TestTrue(TEXT("Recoverable diagnostics do not set the login failure text"), Component->LastNetworkError.IsEmpty());
+        TestEqual(TEXT("Spell errors preserve the replicated player"), Component->ReplicatedPlayerCount, 1);
+    }
     TestTrue(TEXT("Absolute server coordinates"), Component->ServerPlayerPosition.Equals(FVector(550000, 490000, 500), 0.01));
     const FVector ExpectedLocal(1136 * 255.f / 65536.f * 100, 6672 * 255.f / 65536.f * 100, 500 * 255.f / 65536.f * 100);
     const FVector WorldPosition = Component->ServerToWorld(FVector(550000, 490000, 500));

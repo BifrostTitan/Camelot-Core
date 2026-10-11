@@ -145,6 +145,9 @@ int main()
         feed(c, 0x1b, {0, 7, 0, 20, 0, 8, 0, 12, 1, 1, 0xff, 0xbf});
         events = c.TakeCombatEvents();
         check(events.back().type == CombatEventType::SpellEffect && events.back().noSound && events.back().seconds == 1.2 && events.back().result == 1, "spell effect preserves sound suppression and travel duration");
+        feed(c, 0x1b, {0, 7, 0, 20, 0, 8, 0, 12, 0, 1});
+        events = c.TakeCombatEvents();
+        check(c.GetState() == State::Playing && events.size() == 1 && events[0].target == 8 && !events[0].noSound && events[0].seconds == 1.2, "Catacombs ten-byte effect stays connected");
         feed(c, 0xc9, {0, 103, 0, 1, 1, 0, 2, 0, 0, 50, 4, 0});
         events = c.TakeCombatEvents();
         check(events.size() == 1 && events[0].type == CombatEventType::Sound && events[0].effect == 103 && events[0].zone == 1 && events[0].x == 256 && events[0].y == 512 && events[0].z == 50 && events[0].radius == 1024, "positional sound packet");
@@ -206,8 +209,31 @@ int main()
         {
             Client malformed(s);
             playing(malformed, 68);
+            feed(malformed, 0x16, skill(0, 3, {{1, "Confirmed"}}));
+            feed(malformed, 0xad, {90, 70, 0, 0, 0, 60, 80, 0});
             feed(malformed, bad.first, bad.second);
-            check(malformed.GetState() == State::Failed && malformed.Combat().skills.empty(), "malformed packet clears state");
+            check(malformed.GetState() == State::Playing && malformed.Combat().health == 90 && malformed.Combat().skills.size() == 1 && malformed.Combat().skills[0].name == "Confirmed", "malformed gameplay packet preserves confirmed state");
+            auto diagnostics = malformed.TakePacketDiagnostics();
+            check(diagnostics.size() == 1 && diagnostics[0].opcode == bad.first && diagnostics[0].payloadBytes == bad.second.size(), "rejection reports metadata only");
+            for (int i = 0; i < 1000; ++i)
+                feed(malformed, 0x1b, {0});
+            diagnostics = malformed.TakePacketDiagnostics();
+            check(diagnostics.size() == 1 && diagnostics[0].occurrences == 1000, "repeated malformed effects coalesce within bounded storage");
+            feed(malformed, 0xad, {80, 70, 0, 0, 0, 60, 80, 0});
+            check(malformed.GetState() == State::Playing && malformed.Combat().health == 80, "valid packets continue after rejections");
+            auto combined = frame(0x1b, {0});
+            auto valid = frame(0x1b, {0, 7, 0, 20, 0, 8, 0, 12, 0, 1});
+            combined.insert(combined.end(), valid.begin(), valid.end());
+            malformed.Feed(combined.data(), 2, 2);
+            malformed.Feed(combined.data() + 2, combined.size() - 2, 2);
+            check(malformed.GetState() == State::Playing && malformed.TakeCombatEvents().size() == 1, "fragmented adjacent bad and good frames retain alignment");
+            malformed.TakePacketDiagnostics();
+            for (int op = 0; op < 256; ++op)
+                malformed.RejectPacket(uint8_t(op), 0, "Test rejection");
+            check(malformed.TakePacketDiagnostics().size() == 32, "distinct diagnostics have bounded storage");
+            const uint8_t invalidFrame[] = {0x20, 0, 0x1b};
+            malformed.Feed(invalidFrame, sizeof(invalidFrame), 2);
+            check(malformed.GetState() == State::Failed, "invalid framing remains terminal rather than interpreting untrusted stream offsets");
         }
         std::cout << "Combat packet, action, cooldown, lifecycle and malformed-input tests passed\n";
         return 0;

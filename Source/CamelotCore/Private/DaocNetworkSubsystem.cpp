@@ -521,6 +521,8 @@ void UDaocNetworkSubsystem::PublishState()
 }
 void UDaocNetworkSubsystem::ClearPlayers()
 {
+    PacketDiagnosticTimes.Reset();
+    PacketDiagnosticCounts.Reset();
     ++CombatSessionGeneration;
     ClearRenderState();
     AccountCharacters.Empty();
@@ -629,6 +631,19 @@ void UDaocNetworkSubsystem::Tick(float DeltaTime)
     if (!Connection)
         return;
     Connection->Pump();
+    for (const auto &Diagnostic : Connection->Client.TakePacketDiagnostics())
+    {
+        const double Now = FPlatformTime::Seconds();
+        uint64 &Count = PacketDiagnosticCounts.FindOrAdd(Diagnostic.opcode);
+        Count += Diagnostic.occurrences;
+        const double *Last = PacketDiagnosticTimes.Find(Diagnostic.opcode);
+        if (!Last || Now - *Last >= 5.0)
+        {
+            UE_LOG(LogTemp, Warning, TEXT("Camelot: rejected packet 0x%02x (%llu occurrences, latest %llu bytes): %s; keeping confirmed gameplay state"), Diagnostic.opcode, static_cast<unsigned long long>(Count), static_cast<unsigned long long>(Diagnostic.payloadBytes), UTF8_TO_TCHAR(Diagnostic.reason.c_str()));
+            PacketDiagnosticTimes.Add(Diagnostic.opcode, Now);
+            Count = 0;
+        }
+    }
     if (Connection->Client.GetState() == camelot::State::Failed)
     {
         LastNetworkError = UTF8_TO_TCHAR(Connection->Client.Error().c_str());

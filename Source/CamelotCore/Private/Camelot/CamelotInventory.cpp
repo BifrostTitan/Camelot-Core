@@ -73,7 +73,7 @@ bool Client::HandleInventory(uint8_t op, const Bytes &b, double now)
         return false;
     if (b.size() < 4)
     {
-        Fail("Truncated inventory header");
+        RejectPacket(op, b.size(), "Truncated inventory header");
         return true;
     }
     const size_t fixed = settings_.version >= 72 ? 18 : 17; // 1.72 adds armor extension, before dye/emblem.
@@ -83,7 +83,7 @@ bool Client::HandleInventory(uint8_t op, const Bytes &b, double now)
     {
         if (p >= b.size() || b.size() - p - 1 < fixed + 1)
         {
-            Fail("Truncated inventory item");
+            RejectPacket(op, b.size(), "Truncated inventory item");
             return true;
         }
         InventoryItem i;
@@ -108,7 +108,7 @@ bool Client::HandleInventory(uint8_t op, const Bytes &b, double now)
         const size_t length = b[p++];
         if (length > b.size() - p)
         {
-            Fail("Truncated inventory name");
+            RejectPacket(op, b.size(), "Truncated inventory name");
             return true;
         }
         i.name.assign(b.begin() + p, b.begin() + p + length);

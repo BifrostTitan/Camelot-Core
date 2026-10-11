@@ -16,6 +16,8 @@ Tooltips and the selection summary show reported item metadata. `UCamelotUITheme
 
 The preview uses the existing character mesh, appearance, and equipment catalog. Its separate stage is independent of battlefield scale. A 512×640 capture updates at up to 15 Hz while visible; closing the panel or selecting another page releases its actor, lights, texture residency requests, and render target. It does not create previews for other players.
 
+Equipment catalogs should select authored helmet meshes for the actual race and gender, including caps and circlets. Realm-specific override columns contain race/gender pairs. `FDaocEquipmentItem::bHideHair` distinguishes closed helmets from open headwear; Catacombs item hair mode 3 hides hair, while mode 2 retains it. A helmet must load and attach successfully before it hides hair. Explicit sleeves and leggings override torso suppression, so robes cannot leave equipped limbs invisible.
+
 ## Integration
 
 `RequestMoveItem(FromSlot, ToSlot, Count, ExpectedRevision)`, `RequestUseItem(Slot, UseType, ExpectedRevision)`, and `RequestInspectItem(Slot, ExpectedRevision)` are Blueprint-callable session APIs. Pass the revision returned by `GetInventoryState`. Revisions also distinguish replacement connections. Count zero requests the whole stack; destination 100 requests server-selected equipment placement.

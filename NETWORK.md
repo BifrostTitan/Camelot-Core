@@ -28,6 +28,8 @@ Prepared live mobs and remote players use the shared GPU crowd presenter by defa
 
 ## Verification
 
+Recoverable gameplay payload errors appear in Unreal's log with opcode, payload size, reason and occurrence count. The native queue coalesces repeated opcodes and holds at most 32 entries; Unreal limits each opcode to one warning per five seconds. Logs exclude packet bodies, credentials and character identities. Rejections preserve confirmed state and continue with the next complete frame. Invalid framing, handshake failures, timeouts and server-requested disconnects remain terminal because continued processing cannot establish a valid session or safe stream alignment.
+
 Native tests cover framing, fragmented replies, entity state, and version-specific layouts. `DAoC.Network.SocketWorldEntry` adds Unreal socket/rendering checks requiring imported assets. `DAoC.Network.CamelotCoreIdentity` checks standalone plugin discovery, catalog availability, and the old-module redirect. Invoke live tests deliberately using disposable data.
 
 See [COMBAT.md](COMBAT.md), [FRONTEND.md](FRONTEND.md), and [STARTING_LOCATIONS.md](STARTING_LOCATIONS.md).

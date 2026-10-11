@@ -169,8 +169,10 @@ void UDaocEquipmentComponent::ApplyAppearance(USkeletalMeshComponent *Body, UDao
             continue;
         if (Slot == 21 && !Item->Mesh.IsNull())
         {
+            const int32 Before = Parts.Num();
             AddRigid(*Item, Body->GetBoneIndex(TEXT("Bip01 Helmet")) != INDEX_NONE ? TEXT("Bip01 Helmet") : TEXT("Bip01 Head"));
-            Suppressed[8] = true;
+            if (Parts.Num() > Before)
+                Suppressed[8] = Item->bHideHair;
             continue;
         }
         if (Slot == 26)
@@ -185,6 +187,8 @@ void UDaocEquipmentComponent::ApplyAppearance(USkeletalMeshComponent *Body, UDao
             }
             if (!Mask)
                 continue;
+            // Explicit sleeves and leggings supersede a torso's hide flags.
+            Suppressed[Part] = false;
             Selected[Part].Mask = Mask;
             Selected[Part].Color = E->ColorOrEmblem;
             Selected[Part].Extension = (Slot == 25 && Part == 1) || (Slot == 22 && Part == 6) || (Slot == 23 && Part == 4) ? E->Extension : 0;
