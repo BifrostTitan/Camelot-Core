@@ -196,6 +196,8 @@ bool FDaocNetworkTest::RunTest(const FString &Parameters)
                     Queue(0x20, {0, 7, 1, 244, 0, 8, 0x64, 0x70, 0, 7, 0x7a, 0x10, 4, 0, 0, 0});
                     break; // (550000,490000,500)
                 case 6:
+                    // Buffs arrive before the world-entry acknowledgement in Catacombs.
+                    Queue(0x7f, {1, 0, 0, 0, 0});
                     Queue(0x2b, {0});
                     break;
                 }

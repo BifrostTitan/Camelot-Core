@@ -44,6 +44,8 @@ struct SpellLine
 struct Effect
 {
     uint8_t index = 255;
+    /// Display slot for 1.73+ incremental icon updates, distinct from cancelability.
+    uint8_t slot = 255;
     uint16_t icon = 0, id = 0, seconds = 0;
     std::string name;
 };

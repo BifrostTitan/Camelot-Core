@@ -34,6 +34,8 @@ class CAMELOTCORE_API UCamelotCrowdComponent : public UActorComponent
     static constexpr int32 MaxTrackCount = 128;
     /// Initializes default settings and owned components.
     UCamelotCrowdComponent();
+    /// Reads the existing shared attachment pose without evaluating another skeleton.
+    bool GetCharacterSocketTransform(int32 ObjectId, FName Socket, FTransform &Transform) const;
     /// Providers must match the template's body, then its skeletal children, in that order.
     /// Prepare and save them in the editor for packaged consumers.
     UFUNCTION(BlueprintCallable, Category = "Crowd")

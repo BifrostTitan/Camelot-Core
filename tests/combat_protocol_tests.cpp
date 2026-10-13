@@ -31,7 +31,7 @@ void feed(Client &c, uint8_t op, const Bytes &b, double now = 1)
     auto f = frame(op, b);
     c.Feed(f.data(), f.size(), now);
 }
-void playing(Client &c, int version)
+void playing(Client &c, int version, bool finish = true)
 {
     c.Start(0);
     feed(c, 0x22, {0, 0, 0, 0, 0});
@@ -43,8 +43,9 @@ void playing(Client &c, int version)
     feed(c, 0x28, {42, 0});
     feed(c, 0x2d, {0});
     feed(c, 0x20, {0, 7, 0, 50, 0, 0, 0, 10, 0, 0, 0, 20, 0, 0, 0, 0});
-    feed(c, 0x2b, {0});
-    check(c.GetState() == State::Playing, "join failed");
+    if (finish)
+        feed(c, 0x2b, {0});
+    check(c.GetState() == (finish ? State::Playing : State::Initializing), "join failed");
     c.TakeOutgoing();
 }
 Bytes skill(uint8_t first, uint8_t subtype, std::initializer_list<std::pair<uint8_t, std::string>> entries)
@@ -151,14 +152,22 @@ int main()
         feed(c, 0xc9, {0, 103, 0, 1, 1, 0, 2, 0, 0, 50, 4, 0});
         events = c.TakeCombatEvents();
         check(events.size() == 1 && events[0].type == CombatEventType::Sound && events[0].effect == 103 && events[0].zone == 1 && events[0].x == 256 && events[0].y == 512 && events[0].z == 50 && events[0].radius == 1024, "positional sound packet");
-        Bytes buffs{1, 0, 0, 0, 0, 0, 0, 40, 0, 20, 0, 9};
+        Bytes buffs{1, 0, 0, 0, 0, 0, 0, 0, 40, 0, 20, 0, 9};
         name(buffs, "Armor");
         feed(c, 0x7f, buffs);
         check(c.Combat().effects.size() == 1 && c.CancelEffect(9), "effect snapshot/cancel");
         out = c.TakeOutgoing();
         check(out.back()[9] == 0xf8 && payload(out.back()) == Bytes({0, 9}), "cancel internal id");
-        feed(c, 0x7f, {0, 0, 0, 0});
-        check(c.Combat().effects.empty(), "effects removal snapshot");
+        Bytes second = buffs;
+        second[4] = 1;
+        second[5] = 255;
+        second[12] = 10;
+        feed(c, 0x7f, second);
+        check(c.Combat().effects.size() == 2 && !c.CancelEffect(10), "incremental icons preserve other slots and cancelability");
+        feed(c, 0x7f, {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0});
+        check(c.Combat().effects.size() == 1 && c.Combat().effects[0].id == 10, "empty entry removes only its slot");
+        feed(c, 0x7f, {1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0});
+        check(c.Combat().effects.empty(), "last slot removal");
         feed(c, 0xd0, {0, 7, 0, 8, 0, 0, 0, 0});
         events = c.TakeCombatEvents();
         check(events.back().type == CombatEventType::LineOfSight, "LOS request surfaced");
@@ -235,6 +244,26 @@ int main()
             malformed.Feed(invalidFrame, sizeof(invalidFrame), 2);
             check(malformed.GetState() == State::Failed, "invalid framing remains terminal rather than interpreting untrusted stream offsets");
         }
+        s.version = 74;
+        Client initializing(s);
+        playing(initializing, 74, false);
+        feed(initializing, 0x7f, buffs);
+        check(initializing.Combat().effects.size() == 1, "login initializes Catacombs buff icons");
+        feed(initializing, 0x7f, {1, 0, 0, 0, 0});
+        check(initializing.GetState() == State::Initializing && initializing.Combat().effects.size() == 1, "bad initialization packet preserves session and confirmed icons");
+        check(initializing.TakePacketDiagnostics().size() == 1, "initialization rejection is logged");
+        feed(initializing, 0x2b, {0});
+        check(initializing.GetState() == State::Playing, "world entry completes after rejected icon packet");
+        Settings legacySettings = s;
+        legacySettings.version = 68;
+        Client classicIcons(legacySettings);
+        playing(classicIcons, 68);
+        Bytes legacyBuffs = buffs;
+        legacyBuffs.erase(legacyBuffs.begin() + 6);
+        feed(classicIcons, 0x7f, legacyBuffs);
+        check(classicIcons.Combat().effects.size() == 1 && classicIcons.CancelEffect(9), "classic icon layout remains supported");
+        feed(classicIcons, 0x7f, {0, 0, 0, 0});
+        check(classicIcons.Combat().effects.empty(), "classic empty snapshot clears icons");
         std::cout << "Combat packet, action, cooldown, lifecycle and malformed-input tests passed\n";
         return 0;
     }

@@ -42,6 +42,12 @@ FString UCamelotLiveCrowdPresenter::AppearanceKey(const FDaocCharacterAppearance
         Key += FString::Printf(TEXT("/%d:%d:%d:%d:%d"), E.Slot, E.Model, E.ColorOrEmblem, E.Extension, E.Effect);
     return Key;
 }
+bool UCamelotLiveCrowdPresenter::GetCharacterSocketTransform(int32 ObjectId, FName Socket, FTransform &Transform) const
+{
+    const auto *Character = Characters.Find(ObjectId);
+    const auto *Batch = Character ? Shared.Find(Character->Key) : nullptr;
+    return Batch && Batches.IsValidIndex(Batch->Slot) && Batches[Batch->Slot] && Batches[Batch->Slot]->GetCharacterSocketTransform(ObjectId, Socket, Transform);
+}
 void UCamelotLiveCrowdPresenter::Initialize(UWorld *World, UCamelotLiveCrowdCatalog *PreparedCatalog)
 {
     Clear();

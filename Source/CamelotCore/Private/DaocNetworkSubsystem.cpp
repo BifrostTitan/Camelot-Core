@@ -1,4 +1,5 @@
 #include "DaocNetworkSubsystem.h"
+#include "DaocEffectSubsystem.h"
 #include "ProfilingDebugging/CsvProfiler.h"
 CSV_DEFINE_CATEGORY(CamelotNetwork, true);
 #include "Animation/AnimSequence.h"
@@ -536,6 +537,9 @@ void UDaocNetworkSubsystem::ClearPlayers()
 }
 void UDaocNetworkSubsystem::ClearRenderState()
 {
+    if (GetWorld())
+        if (auto *Effects = GetWorld()->GetSubsystem<UDaocEffectSubsystem>())
+            Effects->ResetEffects();
     MobFloorSamples.Reset();
     if (LiveCrowd)
         LiveCrowd->Clear();
@@ -1636,6 +1640,17 @@ void UDaocNetworkSubsystem::DispatchCombatEvents()
         if (E.TargetObjectId != E.SourceObjectId)
             PresentEvent(E.TargetObjectId);
         PlayCombatSound(E);
+        if (GetWorld())
+            if (auto *Effects = GetWorld()->GetSubsystem<UDaocEffectSubsystem>())
+            {
+                const auto Anchor = [&](int32 Id) -> USceneComponent * {
+                    if (Id == PlayerObjectId && LocalPlayerPawn.IsValid())
+                        if (auto *Body = LocalPlayerPawn->FindComponentByClass<USkeletalMeshComponent>())
+                            return Body;
+                    return Players.FindRef(Id);
+                };
+                Effects->HandleCombatEvent(E, Anchor(E.SourceObjectId), Anchor(E.TargetObjectId), E.SourceObjectId == PlayerObjectId || E.TargetObjectId == PlayerObjectId, LiveCrowd);
+            }
         RecordChatEvent(E);
         OnCombatEvent.Broadcast(E);
     }

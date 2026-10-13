@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.20)
+project(daoc_effect_export LANGUAGES CXX)
+add_subdirectory("${CMAKE_CURRENT_LIST_DIR}/../../ThirdParty/daoc-niflib" niflib)
+add_executable(daoc_effect_export export.cpp)
+target_link_libraries(daoc_effect_export PRIVATE Niflib::niflib)
+target_compile_features(daoc_effect_export PRIVATE cxx_std_17)

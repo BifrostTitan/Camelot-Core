@@ -367,21 +367,27 @@ bool Client::HandleCombat(uint8_t op, const Bytes &b, double now)
     case 0x7f: {
         if (b.size() < 4)
             return bad();
-        std::vector<Effect> effects;
+        const bool incremental = settings_.version >= 73;
+        std::vector<Effect> effects = incremental ? combat_.effects : std::vector<Effect>{};
         size_t p = 4;
         for (size_t i = 0; i < b[0]; ++i)
         {
-            if (b.size() - p < 9)
+            const size_t prefix = incremental ? 9 : 8;
+            if (b.size() - p < prefix + 1)
                 return bad();
             Effect f;
-            f.index = b[p];
-            f.icon = Word(b, p + 2);
-            f.seconds = Word(b, p + 4);
-            f.id = Word(b, p + 6);
-            p += 8;
+            f.slot = b[p];
+            f.index = b[p + (incremental ? 1 : 0)];
+            f.icon = Word(b, p + (incremental ? 3 : 2));
+            f.seconds = Word(b, p + (incremental ? 5 : 4));
+            f.id = Word(b, p + (incremental ? 7 : 6));
+            p += prefix;
             if (!Pascal(b, p, f.name))
                 return bad();
-            effects.push_back(std::move(f));
+            if (incremental)
+                effects.erase(std::remove_if(effects.begin(), effects.end(), [&](const Effect &old) { return old.slot == f.slot; }), effects.end());
+            if (f.icon != 0)
+                effects.push_back(std::move(f));
         }
         if (p != b.size())
             return bad();

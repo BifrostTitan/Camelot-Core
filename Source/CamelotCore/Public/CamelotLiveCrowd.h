@@ -44,6 +44,8 @@ class CAMELOTCORE_API UCamelotLiveCrowdPresenter : public UObject
   public:
     /// Binds crowd presentation to a world and its prepared animation-provider catalog.
     void Initialize(UWorld *World, UCamelotLiveCrowdCatalog *PreparedCatalog);
+    /// Resolves effect attachments through the shared crowd pose cache.
+    bool GetCharacterSocketTransform(int32 ObjectId, FName Socket, FTransform &Transform) const;
     /// Attempts prepared GPU presentation; false keeps the existing skeletal fallback.
     bool Present(int32 Id, USkeletalMeshComponent *Body, const FDaocCharacterAppearance &Appearance, UDaocCombatAnimationComponent *Animation, int32 Locomotion, int32 MaxBatches, float PhaseTolerance);
     /// Removes one character from live GPU presentation and restores supplied native animation ownership.

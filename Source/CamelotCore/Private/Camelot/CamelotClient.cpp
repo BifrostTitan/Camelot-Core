@@ -121,7 +121,7 @@ void Client::Fail(const std::string &m)
 }
 void Client::RejectPacket(uint8_t opcode, size_t payloadBytes, const std::string &reason)
 {
-    if (state_ != State::Playing)
+    if (state_ != State::Playing && state_ != State::Initializing && state_ != State::Loading && state_ != State::World)
     {
         Fail(reason + " (opcode " + std::to_string(opcode) + ")");
         return;

@@ -2,6 +2,8 @@
 
 Connected combat uses the existing DOL session. The client sends requests; the server owns damage, healing, eligibility, range checks, costs, rewards, and confirmed results. Presentation follows server events.
 
+Combat particle stages use the prepared effect catalog and a pooled, bounded world subsystem; see [EFFECTS.md](EFFECTS.md).
+
 ## Interfaces
 
 | Layer | Responsibility |

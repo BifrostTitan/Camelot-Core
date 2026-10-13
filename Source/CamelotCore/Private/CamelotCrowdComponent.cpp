@@ -94,6 +94,17 @@ UCamelotCrowdAnimationSet *UCamelotCrowdComponent::PrepareAnimationSet(USkeletal
 #endif
 }
 
+bool UCamelotCrowdComponent::GetCharacterSocketTransform(int32 ObjectId, FName Socket, FTransform &Transform) const
+{
+    const auto *Character = Characters.Find(ObjectId);
+    if (!Character || Weapons.IsEmpty() || !Poses.IsValidIndex(Character->Track) || !Poses[Character->Track])
+        return false;
+    const auto *Pose = Poses[Character->Track].Get();
+    if (!Pose->DoesSocketExist(Socket))
+        return false;
+    Transform = Pose->GetSocketTransform(Socket, RTS_Component) * Character->Transform;
+    return true;
+}
 UCamelotCrowdComponent::UCamelotCrowdComponent()
 {
     PrimaryComponentTick.bCanEverTick = true;

@@ -32,6 +32,10 @@ public class CamelotCore : ModuleRules
         PrivateDefinitions.Add("DAOC_PCX_UNREAL=1");
         if (Target.bBuildEditor)
         {
+            // Lightweight emitter authoring is editor-only in UE 5.8.
+            PrivateIncludePaths.Add(Path.Combine(EngineDirectory, "Plugins/FX/Niagara/Source/Niagara/Internal"));
+            PrivateIncludePaths.Add(Path.Combine(EngineDirectory, "Plugins/FX/Niagara/Source/NiagaraShader/Internal"));
+            PrivateDependencyModuleNames.AddRange(new[] { "RHI", "NiagaraShader" });
             PrivateDependencyModuleNames.Add("UnrealEd");
             PrivateDependencyModuleNames.AddRange(new[] { "UMG", "RenderCore" });
             PrivateDependencyModuleNames.AddRange(new[] { "ToolMenus", "PropertyEditor" });
